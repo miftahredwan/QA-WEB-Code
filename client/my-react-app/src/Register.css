@@ -1,0 +1,155 @@
+.register-container {
+    position: absolute; /* Ensure it covers the full viewport */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: transparent; /* Remove background */
+    margin: 0; /* Remove any margin */
+    padding: 20px; /* Add padding around content if needed */
+}
+
+
+
+.register-form {
+    background-color: #146c8f86;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 20px 40px 10px rgba(0, 0, 0, 0.67);
+    width: 500px;
+    height: 600px;
+}
+
+.login-form {
+    background-color: #146c8f86;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 20px 40px 10px rgba(0, 0, 0, 0.67);
+    width: 500px;
+    height: 320px;
+}
+
+
+h2 {
+    color: #ffe100;
+    text-align: center;
+   font-size: 39px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 20px;
+
+}
+
+/* .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  } */
+.form-group {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    color: #ff0044;
+}
+
+label {
+    color: #ffe100;
+    /* display: block; */
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-family: serif; /* Changed to serif font family */
+    font-size: 22px; /* Increased the font size */
+    font-weight: bold; /* Made the font bold */
+
+
+}
+::placeholder {
+    color: #fafafa9a;
+}
+/* Apply styles to all input fields */
+input[type="text"],
+input[type="email"], 
+input[type="password"],
+input[type="file"],
+input {
+    font-size: 18px; /* Increased font size */
+    height: 50px; /* Increased height of the input field */
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border:  solid #035cf600;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #19153763; /* Same background color */
+    color: #fff; /* Text color for better readability against dark background */
+}
+
+#profileImage{
+    color: #007bff; 
+    font-size: 20px;
+    background-color: #16021573;
+}
+/* Ensure all input fields share the same background color */
+input {
+    background-color: #19153763; /* Ensure the same background color for all input fields */
+    border-radius: 10px;
+}
+
+
+.submit-button {
+    background-color: #ffcc00;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 0px;
+    margin-top: 0px;
+    border: 2px solid #ffcc00; /* Added border */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1.0s, transform 1.0s; /* Removed border-color transition */
+    width: 100%;
+}
+
+.submit-button:hover {
+    text-decoration: underline;
+    background-color: #091dd4f0;
+    transform: translateY(-5px) scale(1.1); /* Added translate and scale effects */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+}
+
+.submit-button:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 2px solid #f3df00;
+    border-radius: 20px;
+    transition: width cubic-bezier(0.075, 0.82, 0.165, 1); /* Added transition for width */
+}
+
+.submit-button:hover:before {
+    width: 100%;
+}
+
+.link a {
+    color: #0d00ff;
+    text-decoration: none;
+    font-size: large;
+    background-color: #f4f7f883;
+}
+
+.link a:hover {
+    transform: translateY(-5px) scale(1.1);
+    text-decoration: underline;
+}
+
+
+
