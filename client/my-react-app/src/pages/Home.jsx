@@ -194,9 +194,9 @@
 // // // //   console.log('User object:', user);
 
 
-// // // //   console.log(`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`);
+// // // //   console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 // // // //   // console.log('Profile Image URL:', user.profileImage);
-// // // //   // console.log('Profile Image URL:', `http://localhost:5500/uploads/${user.profileImage.replace(/\\/g, '/')}`);
+// // // //   // console.log('Profile Image URL:', `${backendUrl}/uploads/${user.profileImage.replace(/\\/g, '/')}`);
 // // // //   return (
 // // // //     <div>
 // // // //       <header>
@@ -220,8 +220,8 @@
 // // // // {user.profileImage ? (
 
 
-// // // //   // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
-// // // // <img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+// // // //   // <img src={`${backendUrl}/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
+// // // // <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 
 // // // // ) : (
 // // // //   <p>No profile image available</p>
@@ -252,7 +252,7 @@
 
 // // // // {question.profileimage ? (
 // // // //                         <img 
-// // // //                           src={`http://localhost:5500/${question.profileimage.replace(/\\/g, '/')}`} 
+// // // //                           src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
 // // // //                           alt="Profile" 
 // // // //                           className="profile-image" 
 // // // //                           onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 
@@ -482,7 +482,7 @@
 // // //   }
 
 // // //   console.log('User object:', user);
-// // //   console.log(`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`);
+// // //   console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 
 // // //   return (
 // // //     <div>
@@ -504,7 +504,7 @@
 // // //       </header>
 // // //       <div className="hero-content">
 // // //         {user.profileImage ? (
-// // //           <img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+// // //           <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 // // //         ) : (
 // // //           <p>No profile image available</p>
 // // //         )}
@@ -528,7 +528,7 @@
 // // //                   <div key={index} className="question-title">
 // // //                     {question.profileimage ? (
 // // //                       <img 
-// // //                         src={`http://localhost:5500/${question.profileimage.replace(/\\/g, '/')}`} 
+// // //                         src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
 // // //                         alt="Profile" 
 // // //                         className="profile-image" 
 // // //                         onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 
@@ -757,7 +757,7 @@
 // //   }
 
 // //   console.log('User object:', user);
-// //   console.log(`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`);
+// //   console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 
 // //   return (
 // //     <div>
@@ -779,7 +779,7 @@
 // //       </header>
 // //       <div className="hero-content">
 // //         {user.profileImage ? (
-// //           <img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+// //           <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 // //         ) : (
 // //           <p>No profile image available</p>
 // //         )}
@@ -803,7 +803,7 @@
 // //                   <div key={index} className="question-title">
 // //                     {question.profileimage ? (
 // //                       <img 
-// //                         src={`http://localhost:5500/${question.profileimage.replace(/\\/g, '/')}`} 
+// //                         src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
 // //                         alt="Profile" 
 // //                         className="profile-image" 
 // //                         onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 
@@ -1034,7 +1034,7 @@
 //   }
 
 //   console.log('User object:', user);
-//   console.log(`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`);
+//   console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 
 //   return (
 //     <div>
@@ -1056,7 +1056,7 @@
 //       </header>
 //       <div className="hero-content">
 //         {user.profileImage ? (
-//           <img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+//           <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 //         ) : (
 //           <p>No profile image available</p>
 //         )}
@@ -1080,7 +1080,7 @@
 //                   <div key={index} className="question-title">
 //                     {question.profileimage ? (
 //                       <img 
-//                         src={`http://localhost:5500/${question.profileimage.replace(/\\/g, '/')}`} 
+//                         src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
 //                         alt="Profile" 
 //                         className="profile-image" 
 //                         onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 
@@ -1154,7 +1154,8 @@ import '../../src/home.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
 import axiosBase from '../axiosconfig';
-
+// eslint-disable-next-line no-undef
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 function Home() {
   const [questions, setQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
@@ -1325,7 +1326,7 @@ function Home() {
   }
 
   console.log('User object:', user);
-  console.log(`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`);
+  console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 
   return (
     <div>
@@ -1347,7 +1348,7 @@ function Home() {
       </header>
       <div className="hero-content">
         {user.profileImage ? (
-          <img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+          <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
@@ -1371,7 +1372,7 @@ function Home() {
                   <div key={index} className="question-title">
                     {question.profileimage ? (
                       <img 
-                        src={`http://localhost:5500/${question.profileimage.replace(/\\/g, '/')}`} 
+                        src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
                         alt="Profile" 
                         className="profile-image" 
                         onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 

@@ -88,7 +88,8 @@ import React, { useContext, useRef } from 'react';
 import axiosBase from '../axiosconfig';
 import { useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
-
+// eslint-disable-next-line no-undef
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 function AskQuestion() {
   const navigate = useNavigate();
   const titleDOM = useRef(null);
@@ -154,7 +155,7 @@ function AskQuestion() {
           {user.profileImage ? (
 
 
-<img src={`http://localhost:5500/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 
   // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
 ) : (
