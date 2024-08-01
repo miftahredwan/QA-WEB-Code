@@ -36,12 +36,8 @@ const questionRouter = require("./route/question.route");
 const answerRouter = require("./route/answer.router");
 const createTables = require("./config/createtable")
 
-const corsOptions = {
-  origin: 'https://baajitechqusetionanswer.vercel.app', // your Vercel domain
-  optionsSuccessStatus: 200,
-};
 
-app.use(cors(corsOptions ));
+app.use(cors());
 app.use(express.json());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
