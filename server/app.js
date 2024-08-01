@@ -40,7 +40,7 @@ app.use(express.json());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-const PORT = 5500 
+const PORT = process.env.PORT
 
 // Uncomment and update the following lines as needed
 
