@@ -303,7 +303,7 @@
 //     .json({ message: "valid user", username, userid, email, password });
 // };
 
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const pool = require("../config/db");
 const jwt = require("jsonwebtoken");
 
