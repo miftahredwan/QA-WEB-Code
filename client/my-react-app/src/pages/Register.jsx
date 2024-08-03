@@ -533,26 +533,48 @@ function Register() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append('username', userNameDom.current.value);
-    formData.append('firstname', firstNameDom.current.value);
-    formData.append('lastname', lastNameDom.current.value);
-    formData.append('email', emailDom.current.value);
-    formData.append('password', passwordDom.current.value);
-    formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
+  //   const formData = new FormData();
+  //   formData.append('username', userNameDom.current.value);
+  //   formData.append('firstname', firstNameDom.current.value);
+  //   formData.append('lastname', lastNameDom.current.value);
+  //   formData.append('email', emailDom.current.value);
+  //   formData.append('password', passwordDom.current.value);
+  //   formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
 
-    try {
-      await axios.post('/api/user/register', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
-      alert('Register successfully. Please log in.');
-      navigate('/login');
-    } catch (error) {
-      alert(error?.response?.data?.msg || "Something went wrong");
-    }
+  //   try {
+  //     await axios.post('/api/user/register', formData, {
+  //       headers: {
+  //         'Content-Type': 'multipart/form-data'
+  //       }
+  //     });
+  //     alert('Register successfully. Please log in.');
+  //     navigate('/login');
+  //   } catch (error) {
+  //     alert(error?.response?.data?.msg || "Something went wrong");
+  //   }
+  // }
+
+
+  const formData = new FormData();
+  formData.append('username', userNameDom.current.value);
+  formData.append('firstname', firstNameDom.current.value);
+  formData.append('lastname', lastNameDom.current.value);
+  formData.append('email', emailDom.current.value);
+  formData.append('password', passwordDom.current.value);
+  formData.append('profileimage', profileImageDom.current.files[0]);  // File upload
+  
+  try {
+    const response = await axios.post('/api/user/register', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    });
+    console.log(response.data); // Handle success
+  } catch (error) {
+    console.error('Registration error:', error.response?.data || error.message);
   }
+  
+
 
   return (
      <body>
