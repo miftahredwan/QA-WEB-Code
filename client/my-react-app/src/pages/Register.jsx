@@ -554,6 +554,7 @@ function Register() {
       alert(error?.response?.data?.msg || "Something went wrong");
     }
   }
+  console.log('Axios base URL:', axiosBase.defaults.baseURL);
 
   return (
      <body>
