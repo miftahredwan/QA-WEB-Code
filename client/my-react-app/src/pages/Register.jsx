@@ -510,9 +510,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from 'react';
 import '../Register.css';
-import axios from '../axiosconfig';
+// import axios from '../axiosconfig';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Using react-icons for eye icons
+import axiosBase from '../axiosconfig';
 
 function Register() {
   const navigate = useNavigate();
@@ -542,7 +543,7 @@ function Register() {
     formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
 
     try {
-      await axios.post('/user/register', formData, {
+      await axiosBase.post('/user/register', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
