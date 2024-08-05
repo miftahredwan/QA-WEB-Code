@@ -545,6 +545,7 @@ function Register() {
   
     try {
       // var process: NodeJS.Process
+      // eslint-disable-next-line no-undef
       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/user/register`, {
         method: 'POST',
         body: formData,
