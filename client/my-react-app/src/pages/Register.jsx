@@ -539,7 +539,7 @@ function Register() {
     formData.append('lastname', lastNameDom.current.value);
     formData.append('email', emailDom.current.value);
     formData.append('password', passwordDom.current.value);
-    formData.append('profileimage', profileImageDom.current.files[0]);  // Add the profile image file
+    formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
 
     try {
       await axios.post('/api/user/register', formData, {
