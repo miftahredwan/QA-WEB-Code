@@ -124,7 +124,7 @@ function Login({ handleLogin }) {
       return;
     }
     try {
-      const { data } = await axiosBase.post('/user/login', { 
+      const { data } = await axiosBase.post('/api/user/login', { 
          email: emailvalue,
          password: passvalue
       });

@@ -168,7 +168,7 @@ function App(){
         return;
       }
 
-      const { data } = await axiosBase.get('/user/check', {
+      const { data } = await axiosBase.get('/api/user/check', {
         headers: {
           Authorization: "Bearer " + token
         },

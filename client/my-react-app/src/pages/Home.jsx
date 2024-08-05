@@ -1241,7 +1241,7 @@ function Home() {
         }
 
         try {
-          await axiosBase.delete('/question/deletequestion', {
+          await axiosBase.delete('/api/question/deletequestion', {
             data: { questionid: questionId },
             headers: {
               Authorization: "Bearer " + token,
@@ -1294,7 +1294,7 @@ function Home() {
     }
 
     try {
-      await axiosBase.put(`/question/updatequestion/${currentQuestion.questionid}`, {
+      await axiosBase.put(`/api/question/updatequestion/${currentQuestion.questionid}`, {
         title: currentQuestion.title,
         description: currentQuestion.description
       }, {

@@ -2348,7 +2348,7 @@ function AnsQuestion() {
       }
 
       const { data } = await axiosBase.post(
-        `/answer/postAnswer/${question.id}`,
+        `/api/answer/postAnswer/${question.id}`,
         { answer: newAnswer, questionid: question.id },
         {
           headers: {
@@ -2394,7 +2394,7 @@ function AnsQuestion() {
         throw new Error('No token found in localStorage');
       }
 
-      await axiosBase.delete(`/answer/deleteanswer/${answerid}`, {
+      await axiosBase.delete(`/api/answer/deleteanswer/${answerid}`, {
         headers: {
           Authorization: "Bearer " + token,
         },

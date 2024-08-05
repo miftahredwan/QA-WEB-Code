@@ -110,7 +110,7 @@ function AskQuestion() {
       alert("Please provide all information");
     }
     try {
-      const { data } = await axiosBase.post('/question/postquestion', {
+      const { data } = await axiosBase.post('/api/question/postquestion', {
         title: titleValue,
         description: descriptionValue,
       }, {
