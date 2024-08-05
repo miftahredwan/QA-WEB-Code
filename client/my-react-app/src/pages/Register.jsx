@@ -513,7 +513,7 @@ import '../Register.css';
 // import axios from '../axiosconfig';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Using react-icons for eye icons
-// import axiosBase from '../axiosconfig';
+import axiosBase from '../axiosconfig';
 
 function Register() {
   const navigate = useNavigate();
@@ -531,10 +531,9 @@ function Register() {
     setIsPasswordVisible(!isPasswordVisible);
   };
 
-
   async function handleSubmit(e) {
     e.preventDefault();
-  
+
     const formData = new FormData();
     formData.append('username', userNameDom.current.value);
     formData.append('firstname', firstNameDom.current.value);
@@ -542,53 +541,19 @@ function Register() {
     formData.append('email', emailDom.current.value);
     formData.append('password', passwordDom.current.value);
     formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
-  
+
     try {
-      // var process: NodeJS.Process
-      // eslint-disable-next-line no-undef
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/user/register`, {
-        method: 'POST',
-        body: formData,
+      await axiosBase.post('/api/user/register', formData, {
         headers: {
-          'Accept': 'application/json'
+          'Content-Type': 'multipart/form-data'
         }
       });
-  
-      if (response.ok) {
-        alert('Register successfully. Please log in.');
-        navigate('/login');
-      } else {
-        const errorData = await response.json();
-        alert(errorData.msg || "Something went wrong");
-      }
+      alert('Register successfully. Please log in.');
+      navigate('/login');
     } catch (error) {
-      alert("Something went wrong");
+      alert(error?.response?.data?.msg || "Something went wrong");
     }
   }
-
-  // async function handleSubmit(e) {
-  //   e.preventDefault();
-
-  //   const formData = new FormData();
-  //   formData.append('username', userNameDom.current.value);
-  //   formData.append('firstname', firstNameDom.current.value);
-  //   formData.append('lastname', lastNameDom.current.value);
-  //   formData.append('email', emailDom.current.value);
-  //   formData.append('password', passwordDom.current.value);
-  //   formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
-
-  //   try {
-  //     await axiosBase.post('/user/register', formData, {
-  //       headers: {
-  //         'Content-Type': 'multipart/form-data'
-  //       }
-  //     });
-  //     alert('Register successfully. Please log in.');
-  //     navigate('/login');
-  //   } catch (error) {
-  //     alert(error?.response?.data?.msg || "Something went wrong");
-  //   }
-  // }
 
   return (
      <body>
