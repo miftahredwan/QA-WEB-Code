@@ -542,7 +542,7 @@ function Register() {
     formData.append('profileImage', profileImageDom.current.files[0]);  // Add the profile image file
 
     try {
-      await axios.post('/register', formData, {
+      await axios.post('/user/register', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
