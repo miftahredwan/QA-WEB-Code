@@ -144,7 +144,7 @@ function AskQuestion() {
       <nav className="nav">
         <ul>
           <li className="navhome"><a href="/">Home</a></li>
-          <li><a href="/api/ansquestion">Answered Questions</a></li>
+          <li><a href="/ansquestion">Answered Questions</a></li>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav>

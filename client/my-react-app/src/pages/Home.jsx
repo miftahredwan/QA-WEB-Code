@@ -1337,7 +1337,7 @@ function Home() {
             <ul>
               <li><a href="/">Home</a></li>
               <li>
-                <button className="btn-nav"><a href="/askquestion">Ask Question</a></button>
+                <button className="btn-nav"><a href="/question">Ask Question</a></button>
               </li>
               <li>
                 <button onClick={Logout} className="logout">Logout</button>
@@ -1353,7 +1353,7 @@ function Home() {
           <p>No profile image available</p>
         )}
         <h1>Welcome, {user.username}</h1>
-        <a href="/api/askquestion"><button className="btn">Ask Question</button></a>
+        <a href="/api/question"><button className="btn">Ask Question</button></a>
       </div>
 
       <section className="hero">
@@ -1388,7 +1388,7 @@ function Home() {
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
-                      <Link to={`/api/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
+                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
                         {question.questiontitle}
                       </Link>
                       <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
