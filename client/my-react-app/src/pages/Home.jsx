@@ -1326,7 +1326,7 @@ function Home() {
   }
 
   console.log('User object:', user);
-  console.log(`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`);
+  console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
 
   return (
     <div>
@@ -1348,19 +1348,19 @@ function Home() {
       </header>
       <div className="hero-content">
         {user.profileImage ? (
-          <img src={`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+          <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
         <h1>Welcome, {user.username}</h1>
-        <a href="/askquestion"><button className="btn">Ask Question</button></a>
+        <a href="/api/askquestion"><button className="btn">Ask Question</button></a>
       </div>
 
       <section className="hero">
         <div className="container">
           <div className="hero-content">
             <h1>GROW YOUR PROGRAMMING KNOWLEDGE WITH OUR HELP!</h1>
-            <a href="/ansquestion"><button className="btn">Answered Question</button></a>
+            <a href="/api/ansquestion"><button className="btn">Answered Question</button></a>
           </div>
         </div>
         <section className='question-section'>
@@ -1372,7 +1372,7 @@ function Home() {
                   <div key={index} className="question-title">
                     {question.profileimage ? (
                       <img 
-                      src={`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`} 
+                      src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} 
                         // src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
                         alt="Profile" 
                         className="profile-image" 
@@ -1388,7 +1388,7 @@ function Home() {
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
-                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
+                      <Link to={`/api/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
                         {question.questiontitle}
                       </Link>
                       <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>

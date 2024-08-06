@@ -144,7 +144,7 @@ function AskQuestion() {
       <nav className="nav">
         <ul>
           <li className="navhome"><a href="/">Home</a></li>
-          <li><a href="/ansquestion">Answered Questions</a></li>
+          <li><a href="/api/ansquestion">Answered Questions</a></li>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav>
@@ -155,7 +155,7 @@ function AskQuestion() {
           {user.profileImage ? (
 
 
-<img src={`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
 
   // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
 ) : (
