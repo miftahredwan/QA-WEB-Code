@@ -25,7 +25,9 @@ const axiosBase = axios.create({
     // baseURL: process.env.REACT_APP_BACKEND_URL,
 
     // eslint-disable-next-line no-undef
-    baseURL: process.env.REACT_APP_BACKEND_URL  || 'https://qa-web-code-8.onrender.com', // fallback URL
+    // baseURL: process.env.REACT_APP_BACKEND_URL  || 'https://qa-web-code-8.onrender.com', // fallback URL
+
+    baseURL: import.meta.env.VITE_BACKEND_URL 
 });
 
 console.log('Axios base URL:', axiosBase.defaults.baseURL);

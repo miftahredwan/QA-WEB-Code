@@ -555,7 +555,8 @@ function Register() {
     }
   }
   console.log('Axios base URL:', axiosBase.defaults.baseURL);
-  console.log('REACT_APP_BACKEND_URL:', process.env.REACT_APP_BACKEND_URL);
+
+console.log(import.meta.env.VITE_BACKEND_URL);
 
 
   return (
