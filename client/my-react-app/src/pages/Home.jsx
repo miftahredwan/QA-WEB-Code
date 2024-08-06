@@ -1335,9 +1335,9 @@ function Home() {
           <div className="logo"></div>
           <nav className='navbar'>
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><Link to="/">Home</Link></li>
               <li>
-                <button className="btn-nav"><a href="/question">Ask Question</a></button>
+              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
               </li>
               <li>
                 <button onClick={Logout} className="logout">Logout</button>
@@ -1353,7 +1353,7 @@ function Home() {
           <p>No profile image available</p>
         )}
         <h1>Welcome, {user.username}</h1>
-        <a href="/api/question"><button className="btn">Ask Question</button></a>
+        <Link to="/askquestion"><button className="btn">Ask Question</button></Link>
       </div>
 
       <section className="hero">

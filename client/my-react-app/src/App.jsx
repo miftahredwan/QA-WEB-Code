@@ -211,7 +211,7 @@ function App(){
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login handleLogin={handleLogin} />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/question" element={user ? <AskQuestion /> : <Login />} />
+        <Route path="/askquestion" element={user ? <AskQuestion /> : <Login />} />
         <Route path="/ansquestion" element={<Ansquestion />} />
       </Routes> 
     </AppState.Provider>  
