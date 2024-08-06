@@ -1155,7 +1155,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
 import axiosBase from '../axiosconfig';
 // eslint-disable-next-line no-undef
-const backendUrl = process.env.REACT_APP_BACKEND_URL;
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 function Home() {
   const [questions, setQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
@@ -1173,7 +1173,7 @@ function Home() {
           throw new Error('No token found in localStorage');
         }
 
-        const { data } = await axiosBase.get('/question/getquestions', {
+        const { data } = await axiosBase.get('/api/question/getquestions', {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -1206,7 +1206,7 @@ function Home() {
         throw new Error('No token found in localStorage');
       }
 
-      await axiosBase.delete('/question/deletequestion', {
+      await axiosBase.delete('/api/question/deletequestion', {
         data: { questionid: questionId },
         headers: {
           Authorization: "Bearer " + token,
@@ -1326,7 +1326,7 @@ function Home() {
   }
 
   console.log('User object:', user);
-  console.log(`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`);
+  console.log(`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`);
 
   return (
     <div>
@@ -1348,7 +1348,7 @@ function Home() {
       </header>
       <div className="hero-content">
         {user.profileImage ? (
-          <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+          <img src={`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
@@ -1372,7 +1372,8 @@ function Home() {
                   <div key={index} className="question-title">
                     {question.profileimage ? (
                       <img 
-                        src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
+                      src={`${backendUrl}/api/${user.profileImage.replace(/\\/g, '/')}`} 
+                        // src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
                         alt="Profile" 
                         className="profile-image" 
                         onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg"; }} 
