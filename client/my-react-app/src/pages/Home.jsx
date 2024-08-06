@@ -1335,7 +1335,7 @@ function Home() {
           <div className="logo"></div>
           <nav className='navbar'>
             <ul>
-              <li><Link to="/">Home</Link></li>
+            <Link to="/"><li>Home</li></Link>
               <li>
               <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
               </li>
@@ -1360,7 +1360,6 @@ function Home() {
         <div className="container">
           <div className="hero-content">
             <h1>GROW YOUR PROGRAMMING KNOWLEDGE WITH OUR HELP!</h1>
-            <a href="/api/ansquestion"><button className="btn">Answered Question</button></a>
           </div>
         </div>
         <section className='question-section'>

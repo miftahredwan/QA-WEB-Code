@@ -2295,11 +2295,11 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState, useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../ansque.css';
 import axiosBase from '../axiosconfig';
 import { AppState } from '../App'; // Assuming AppState context is defined in App.js
-
+const backendUrl = import.meta.env.VITE_BACKEND_URL
 function AnsQuestion() {
   const location = useLocation();
   const [question, setQuestion] = useState({});
@@ -2324,7 +2324,7 @@ function AnsQuestion() {
         if (!token) {
           throw new Error('No token found in localStorage');
         }
-        const { data } = await axiosBase.get(`/answer/getAnswer/${id}`, {
+        const { data } = await axiosBase.get(`/api/answer/getAnswer/${id}`, {
           headers: {
             Authorization: "Bearer " + token,
           },
@@ -2429,13 +2429,27 @@ function AnsQuestion() {
     <div>
       <nav className="nav">
         <ul>
-          <li className='navhome'><a href="/">Home</a></li>
+          {/* <li className='navhome'><a href="/">Home</a></li>
+           */}
+     
+          <Link to="/"><li className='navhome'>Home</li></Link>
+          <Link to="/askquestion"><button>Ask Question</button></Link>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav>
       <div className="container">
-        <div className="logo">
-          <img src="https://placehold.co/100x100" alt="Logo" />
+        <div className="hero-content">
+          {user.profileImage ? (
+
+
+<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+
+  // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
+) : (
+  <p>No profile image available</p>
+)}
+
+
         </div>
         <h1>Question</h1>
         <div className="question-details">

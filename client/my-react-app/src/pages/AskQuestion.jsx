@@ -86,7 +86,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext, useRef } from 'react';
 import axiosBase from '../axiosconfig';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
 // eslint-disable-next-line no-undef
 const backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -143,13 +143,12 @@ function AskQuestion() {
     <div>
       <nav className="nav">
         <ul>
-          <li className="navhome"><a href="/">Home</a></li>
-          <li><a href="/ansquestion">Answered Questions</a></li>
+         <Link to="/"> <li className="navhome">Home</li></Link>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav>
       <div className="container">
-        <div className="logo">
+        <div className="hero-content">
           {/* <img src="https://placehold.co/100x100" alt="Logo" /> */}
           
           {user.profileImage ? (
