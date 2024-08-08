@@ -1337,16 +1337,15 @@ function Home() {
          
           <nav className='navbar'>
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
-            <ul>
+           
               <button>
-            <Link to="/"><li>Home</li></Link></button>
-              <li>
+            <Link to="/">Home</Link></button>
+             
               <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
-              </li>
-              <li>
+            
                 <button onClick={Logout} className="logout">Logout</button>
-              </li>
-            </ul>
+             
+           
           </nav>
         </div>
       </header>

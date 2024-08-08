@@ -88,7 +88,7 @@ color: #ffe206;
     height: 50px; /* Adjust the height of the logo */
     /* Optional: add margin if you need more spacing */
     margin-right: auto; /* Pushes the logo to the left */
-    margin-left: 20px; /* Moves the logo a bit to the right */
+    margin-left: 200px; /* Moves the logo a bit to the right */
   }
 
   header a {
