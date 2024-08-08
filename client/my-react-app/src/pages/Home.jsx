@@ -1154,7 +1154,7 @@ import '../../src/home.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
 import axiosBase from '../axiosconfig';
-import logo from '../../public/images/logo.png.webp'; // Import the logo image
+import logo from '../../public/images/cropped-White-logo-no-background.png.webp'; // Import the logo image
 
 // eslint-disable-next-line no-undef
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
@@ -1338,9 +1338,10 @@ function Home() {
           <nav className='navbar'>
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
             <ul>
-            <Link to="/"><li>Home</li></Link>
+              <button>
+            <Link to="/">Home</Link></button>
               <li>
-              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
+              <Link to="/askquestion"><button>Ask Question</button></Link>
               </li>
               <li>
                 <button onClick={Logout} className="logout">Logout</button>
