@@ -1371,7 +1371,7 @@ function Home() {
                   <div key={index} className="question-title">
                     {question.profileimage ? (
                       <img 
-                      src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} 
+                      src={`${backendUrl}/${question.profileImage.replace(/\\/g, '/')}`} 
                         // src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
                         alt="Profile" 
                         className="profile-image" 

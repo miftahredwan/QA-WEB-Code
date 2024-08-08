@@ -1,126 +1,186 @@
+/* Container for the registration and login forms */
 .register-container {
-    position: absolute; /* Ensure it covers the full viewport */
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: auto;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    background-color: transparent; /* Remove background */
-    margin: 0; /* Remove any margin */
-    padding: 20px; /* Add padding around content if needed */
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 0;
+    padding: 20px;
 }
 
-
-
+/* Form styling for both register and login forms */
 .register-form {
-    background-color: #146c8f86;
+    background-color: rgba(7, 47, 65, 0.63);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 20px 40px 10px rgba(0, 0, 0, 0.67);
-    width: 500px;
-    height: 600px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    height: 399px; /* Example of setting a specific height */
 }
 
+
 .login-form {
-    background-color: #146c8f86;
-    padding: 20px;
-    border-radius: 50px;
+    background-color: rgba(7, 47, 65, 0.63);
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: 20px 40px 10px rgba(0, 0, 0, 0.67);
-    width: 500px;
-    height: 320px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
 }
+
+/* Logo and heading container styling */
+.logo-heading-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Heading (h2) styling */
+/* h2 {
+    color: #ffe100;
+    text-align: center;
+    font-size: 39px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 1px;
+} */
 
 
 h2 {
-    color: #ffe100;
+    color: #1b1b1b;
     text-align: center;
-   font-size: 39px;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    margin-bottom: 20px;
+    font-size: 39px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 1px;
+    text-shadow: 
+      0 0 4px #fdf905,   /* Brighter inner glow */
+      0 0 10px #181502,   /* Brighter medium glow */
+      0 0 3px hsl(0, 0%, 100%),   /* Brighter outer glow with a slightly different color */
+      0 0 6px hsl(30, 17%, 93%),   /* More intense outer glow */
+      0 0 10px #f8f6f3;  /* Strongest and brightest glow */
+  }
+  
+  
 
-}
-
-/* .form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  } */
+/* Form group styling */
 .form-group {
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center;
     color: #ff0044;
 }
 
+/* Label styling */
 label {
-    color: #ffe100;
-    /* display: block; */
-    margin-left: 0px;
-    margin-bottom: 5px;
-    font-family: serif; /* Changed to serif font family */
-    font-size: 22px; /* Increased the font size */
-    font-weight: bold; /* Made the font bold */
+    color: #ffff;
+    margin-bottom: 0px;
+    font-family: serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.692);
+    text-align: left; /* Ensure the text within the label is aligned to the left */
+    display: block; /* Makes sure the label takes up the full width */
+  }
+  
 
-
-}
+/* Placeholder styling */
 ::placeholder {
-    color: #fafafa9a;
+    color: #08000080;
 }
-/* Apply styles to all input fields */
-input[type="text"],
+
+
+.form-row {
+    display: flex;
+    gap: 10px; /* Creates a small gap between the form groups */
+   }
+
+
+/* Input fields styling */
+input [type="text"],
 input[type="email"], 
 input[type="password"],
 input[type="file"],
 input {
-    font-size: 18px; /* Increased font size */
-    height: 50px; /* Increased height of the input field */
+    font-size: 18px;
+    height: 50px;
     width: 100%;
     margin-top: 10px;
     padding: 10px;
-    border:  solid #035cf600;
+    border: none;
     border-radius: 10px;
     box-sizing: border-box;
-    background-color: #19153763; /* Same background color */
-    color: #fff; /* Text color for better readability against dark background */
+    background-color: rgba(220, 218, 240, 0.24);
+    color: #fff;
 }
 
-#profileImage{
-    color: #007bff; 
+/* Profile image input styling */
+#profileImage {
+    color: #0004ff; 
     font-size: 20px;
-    background-color: #16021573;
-}
-/* Ensure all input fields share the same background color */
-input {
-    background-color: #19153763; /* Ensure the same background color for all input fields */
-    border-radius: 10px;
+    background-color: rgba(22, 2, 21, 0.45);
 }
 
-
-.submit-button {
-    background-color: #ffcc00;
+/* Submit button styling */
+/* .submit-button {
+    background-color: #141414;
     font-size: 24px;
     color: #ffffff;
     font-weight: bold;
-    padding: 20px 0px;
-    margin-top: 0px;
-    border: 2px solid #ffcc00; /* Added border */
+    padding: 20px 0;
+    margin-top: 20px;
+    border: 2px solid #ffcc00;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 1.0s, transform 1.0s; /* Removed border-color transition */
+    transition: background-color 1s, transform 1s;
     width: 100%;
-}
+    position: relative;
+} */
+
+
+.submit-button {
+    background-color: #141414;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-top: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1s, transform 1s;
+    width: 100%;
+    position: relative;
+  }
+  
+  .submit-button.loading {
+    animation: rotate 1s infinite linear;
+  }
+  
+  /* Keyframes for rotation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 .submit-button:hover {
     text-decoration: underline;
-    background-color: #091dd4f0;
-    transform: translateY(-5px) scale(1.1); /* Added translate and scale effects */
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+    background-color: #fdfdfffb;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #0f0f0c;
 }
 
 .submit-button:hover:before {
@@ -130,26 +190,25 @@ input {
     left: 0;
     width: 0;
     height: 100%;
-    border: 2px solid #f3df00;
+    border: 2px solid #11110f;
     border-radius: 20px;
-    transition: width cubic-bezier(0.075, 0.82, 0.165, 1); /* Added transition for width */
+    transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .submit-button:hover:before {
     width: 100%;
 }
 
+/* Link styling */
 .link a {
     color: #0d00ff;
     text-decoration: none;
-    font-size: large;
-    background-color: #f4f7f883;
+    font-size: 18px;
+    font-weight: bold;
+    /* background-color: rgba(244, 247, 248, 0); */
 }
 
 .link a:hover {
     transform: translateY(-5px) scale(1.1);
     text-decoration: underline;
 }
-
-
-

@@ -514,6 +514,9 @@ import '../Register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Using react-icons for eye icons
 import axiosBase from '../axiosconfig';
+// import logo from '../public/images/logo.png.webp'; // Import the logo image
+import logo from '../../public/images/logo.png.webp'; // Import the logo image
+
 
 function Register() {
   const navigate = useNavigate();
@@ -526,7 +529,7 @@ function Register() {
   const profileImageDom = useRef(null);  // New ref for profile image
 
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-
+  const [loading, setLoading] = useState(false);  // State to manage loading
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
@@ -552,6 +555,8 @@ function Register() {
       navigate('/login');
     } catch (error) {
       alert(error?.response?.data?.msg || "Something went wrong");
+    }finally {
+      setLoading(false); // Stop loading after the request is completed
     }
   }
   console.log('Axios base URL:', axiosBase.defaults.baseURL);
@@ -559,25 +564,25 @@ function Register() {
 console.log(import.meta.env.VITE_BACKEND_URL);
 
 
-  return (
-     <body>
-    <div className="register-container">
-      <h2>Create Account</h2>
-      <form onSubmit={handleSubmit} className="register-form">
-        <div className="form-group">
-          <label htmlFor="name">NAME</label>
-          <input
-            ref={userNameDom}
-            type="text"
-            id="name"
-            placeholder="User Name"
-            required
-          />
-        </div>
 
+
+
+  return (
+     <body>     
+    <div className="register-container">
+{/* 
+    <img src={logo} alt="Logo" className="logo" /> {/* Logo element */}    
+       <img src={logo} alt="Logo" className="logo" /> {/* Logo element */}  
+        <h2>Welcome 
+          <span> to </span>
+          Baaji Tech Q & A <br />
+          Create Account
+        </h2>
+      <form onSubmit={handleSubmit} className="register-form">        
+        <div className="form-row">
         <div className="form-group">
           <label>First Name</label>
-          <input
+          <input className='registername'
             ref={firstNameDom}
             type="text"
             name="firstName"
@@ -585,10 +590,9 @@ console.log(import.meta.env.VITE_BACKEND_URL);
             required
           />
         </div>
-
         <div className="form-group">
           <label>Last Name</label>
-          <input
+          <input className='registername'
             ref={lastNameDom}
             type="text"
             name="lastName"
@@ -596,10 +600,22 @@ console.log(import.meta.env.VITE_BACKEND_URL);
             required
           />
         </div>
-
+        </div>
+        
         <div className="form-group">
-          <label htmlFor="email">EMAIL</label>
-          <input
+          <label htmlFor="name">Name</label>
+          <input className='registername'
+            ref={userNameDom}
+            type="text"
+            id="name"
+            placeholder="User Name"
+            required
+          />
+        </div>
+        <div className="form-row">
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input 
             ref={emailDom}
             type="email"
             id="email"
@@ -607,9 +623,9 @@ console.log(import.meta.env.VITE_BACKEND_URL);
             required
           />
         </div>
-
+        
         <div className="form-group">
-          <label htmlFor="password">PASSWORD</label>
+          <label htmlFor="password">Password</label>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <input
               ref={passwordDom}
@@ -628,7 +644,8 @@ console.log(import.meta.env.VITE_BACKEND_URL);
             </button>
           </div>
         </div>
-
+        </div>
+        <div className="form-row">
         <div className="form-group">
           <label htmlFor="profileImage">Profile Image</label>
           <input className='profilePic'
@@ -640,8 +657,15 @@ console.log(import.meta.env.VITE_BACKEND_URL);
             required
           />
         </div>
+        </div>
+        <button 
+  type="submit" 
+  className={`submit-button ${loading ? 'loading' : ''}`} 
+  disabled={loading}
+>
+  {loading ? 'Loading...' : 'Sign Up'}
+</button>
 
-        <button type="submit" className="submit-button">Sign Up</button>
         <div className="link">
           <Link to="/login">Already Registered? Login</Link>
         </div>

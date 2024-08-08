@@ -103,6 +103,7 @@ import '../Register.css';
 import { Link } from 'react-router-dom';
 import axiosBase from '../axiosconfig';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Using react-icons for eye icons
+import logo from '../../public/images/logo.png.webp'; // Import the logo image
 
 // eslint-disable-next-line react/prop-types
 function Login({ handleLogin }) {
@@ -139,6 +140,7 @@ function Login({ handleLogin }) {
   return (
     <body>
       <div className="register-container">
+      <img src={logo} alt="Logo" className="logo" /> {/* Logo element */}  
         <h2>Welcome 
           <span> to </span>
           Baaji Tech Q & A
@@ -146,7 +148,7 @@ function Login({ handleLogin }) {
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
             <label>Email</label>
-            <input 
+            <input className='login-input'
               ref={emailDom}
               type="email" 
               name="email" 
@@ -156,7 +158,7 @@ function Login({ handleLogin }) {
           <div className="form-group">
             <label htmlFor="password">PASSWORD</label>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <input
+              <input className='login-input'
                 ref={passwordDom}
                 type={isPasswordVisible ? 'text' : 'password'}
                 id="password"
