@@ -2432,7 +2432,7 @@ function AnsQuestion() {
         <div className="container">
          
           <nav className='navbar'>
-          <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
+          <Link to="/"><img src={logo} alt="Logo" className="homelogo" /></Link> {/* Logo element */}  
           <li>
               <button>
             <Link to="/">Home</Link></button>
