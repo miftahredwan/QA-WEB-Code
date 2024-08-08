@@ -88,6 +88,7 @@ import React, { useContext, useRef } from 'react';
 import axiosBase from '../axiosconfig';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
+import logo from '../../public/images/cropped-White-logo-no-background.png.webp'; // Import the logo image
 // eslint-disable-next-line no-undef
 const backendUrl = import.meta.env.VITE_BACKEND_URL
 function AskQuestion() {
@@ -160,10 +161,25 @@ function AskQuestion() {
 ) : (
   <p>No profile image available</p>
 )}
-
-          
+</div>
+        <header>
+        <div className="container">
+         
+          <nav className='navbar'>
+          <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
+          <li>
+              <button>
+            <Link to="/">Home</Link></button>
+             </li><li>
+              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
+              </li>
+            <li>
+                <button onClick={Logout} className="logout">Logout</button>
+                </li>
+           
+          </nav>
         </div>
-        <h1>Ask a Public Question</h1>
+      </header>
         <div className="steps">
           <li>Summarize your problem in a one-line title.</li>
           <li>Describe your problem in more detail.</li>
