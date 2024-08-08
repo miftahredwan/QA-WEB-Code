@@ -2298,6 +2298,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../ansque.css';
 import axiosBase from '../axiosconfig';
+import logo from '../../public/images/cropped-White-logo-no-background.png.webp'; // Import the logo image
 import { AppState } from '../App'; // Assuming AppState context is defined in App.js
 const backendUrl = import.meta.env.VITE_BACKEND_URL
 function AnsQuestion() {
@@ -2426,17 +2427,34 @@ function AnsQuestion() {
   }
 
   return (
-    <div>      
-      <nav className="nav">
+    <div>   
+       <header>
+        <div className="container">
+         
+          <nav className='navbar'>
+          <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
+          <li>
+              <button>
+            <Link to="/">Home</Link></button>
+             </li><li>
+              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
+              </li>
+            <li>
+                <button onClick={Logout} className="logout">Logout</button>
+                </li>
+           
+          </nav>
+        </div>
+      </header>   
+      {/* <nav className="nav">
         <ul>
-          {/* <li className='navhome'><a href="/">Home</a></li>
-           */}
+        
      
           <Link to="/"><li className='navhome'>Home</li></Link>
           <Link to="/askquestion"><button>Ask Question</button></Link>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
-      </nav>
+      </nav> */}
       <div className="container">
         <div className="hero-content">
           {user.profileImage ? (

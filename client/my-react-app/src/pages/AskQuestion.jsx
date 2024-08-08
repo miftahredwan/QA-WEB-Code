@@ -142,12 +142,30 @@ function AskQuestion() {
 
   return (
     <div>
-      <nav className="nav">
+       <header>
+        <div className="container">
+         
+          <nav className='navbar'>
+          <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
+          <li>
+              <button>
+            <Link to="/">Home</Link></button>
+             </li><li>
+              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
+              </li>
+            <li>
+                <button onClick={Logout} className="logout">Logout</button>
+                </li>
+           
+          </nav>
+        </div>
+      </header>
+      {/* <nav className="nav">
         <ul>
          <Link to="/"> <li className="navhome">Home</li></Link>
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
-      </nav>
+      </nav> */}
       <div className="container">
         <div className="hero-content">
           {/* <img src="https://placehold.co/100x100" alt="Logo" /> */}
