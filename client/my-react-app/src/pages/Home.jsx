@@ -1369,7 +1369,7 @@ function Home() {
               questions.map((question, index) => (
                 question.questiontitle ? (
                   <div key={index} className="question-title">
-                    {question.profileimage ? (
+                    {/* {question.profileimage ? (
                       <img 
                       src={`${backendUrl}/${question.profileImage.replace(/\\/g, '/')}`} 
                         // src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} 
@@ -1379,7 +1379,7 @@ function Home() {
                       />
                     ) : (
                       <p>No profile image available</p>
-                    )}
+                    )} */}
                     <div className='username'>{question.username}</div>
                     <div className="question-container">
                       <input
