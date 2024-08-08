@@ -62,7 +62,7 @@
   width: 100%; /* Ensure it spans the full width of the viewport */
   height: 100%; /* Ensure it spans the full height of the viewport */
   margin: 0; /* Remove auto centering margin */
-  padding: 2rem; /* Padding around the content */
+  /* padding: 2rem; Padding around the content */
   text-align: center; /* Center the text within the container */
 }
 
