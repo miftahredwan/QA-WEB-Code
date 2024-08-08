@@ -126,12 +126,14 @@ color: #ffe206;
 
   .hero-content-profile .btn{
    align-items: center;
+   position: relative;
   }
 
   .hero-content {
     position: absolute;
     margin-top:-600px;
   }
+  
   .hero {
     background-color: #f2f2f200;
     padding: 180px 100px;
@@ -139,7 +141,7 @@ color: #ffe206;
   }
   
  
-  .hero h1 {
+  /* .hero h1 {
     margin-left: auto;
     font-size: 38px;
     margin-bottom: 120px;
@@ -148,8 +150,43 @@ color: #ffe206;
     border-radius: 19px;
     animation: bounce 6s infinite;
     text-align: center;
+  } */
+  
+
+  .hero h1 {
+    margin-left: auto;
+    font-size: 38px;
+    margin-bottom: 120px;
+    color: #00ff9df7; /* Neon green color */
+    padding: 15px 10px;
+    border-radius: 19px;
+    text-align: center;
+    animation: bounce 6s infinite;
+    
+    /* Neon effect */
+    text-shadow: 
+      0 0 5px #00ff9d,
+      0 0 10px #00ff9d,
+      0 0 20px #00ff9d,
+      0 0 40px #00ff9d,
+      0 0 80px #00ff9d,
+      0 0 90px #00ff9d,
+      0 0 100px #00ff9d,
+      0 0 150px #00ff9d;
+  
+    box-shadow: 
+      0 0 5px #00ff9d,
+      0 0 10px #00ff9d,
+      0 0 20px #00ff9d,
+      0 0 40px #00ff9d,
+      0 0 80px #00ff9d,
+      0 0 90px #00ff9d,
+      0 0 100px #00ff9d,
+      0 0 150px #00ff9d;
   }
   
+
+
   @keyframes bounce {
     0% {
       transform: translateY(0);
