@@ -1154,6 +1154,8 @@ import '../../src/home.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AppState } from '../App';
 import axiosBase from '../axiosconfig';
+import logo from '../../public/images/logo.png.webp'; // Import the logo image
+
 // eslint-disable-next-line no-undef
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 function Home() {
@@ -1332,8 +1334,9 @@ function Home() {
     <div>
       <header>
         <div className="container">
-          <div className="logo"></div>
+         
           <nav className='navbar'>
+          <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
             <ul>
             <Link to="/"><li>Home</li></Link>
               <li>
