@@ -1381,8 +1381,8 @@ function Home() {
                       <p>No profile image available</p>
                     )} */}
 
-{question.profileImage ? (
-          <img src={`${backendUrl}/${question.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+{question.profileimage ? (
+          <img src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
