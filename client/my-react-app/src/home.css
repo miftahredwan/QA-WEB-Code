@@ -106,8 +106,8 @@ color: #ffe206;
   }
   
   header .navbar li {
-    margin: 2px;
-    padding: 2px;
+    margin: 1px;
+    padding: 1px;
   }
   
   header .navbar li {
@@ -116,6 +116,16 @@ color: #ffe206;
     /* margin-right: 50px; */
     margin-top: -6px;
     margin-bottom: 10px;
+  }
+
+  .hero-content-profile {
+    position: absolute;
+    margin-top:-600px;
+    margin-left: 90px;
+  }
+
+  .hero-content-profile .btn{
+   align-items: center;
   }
 
   .hero-content {
