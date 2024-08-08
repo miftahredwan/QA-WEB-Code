@@ -87,8 +87,9 @@ color: #ffe206;
   .homelogo {
     height: 50px; /* Adjust the height of the logo */
     /* Optional: add margin if you need more spacing */
-    margin-right: 100px; /* Pushes the logo to the left */
-}
+    margin-right: auto; /* Pushes the logo to the left */
+    margin-left: 20px; /* Moves the logo a bit to the right */
+  }
 
   header a {
     color: #fff;

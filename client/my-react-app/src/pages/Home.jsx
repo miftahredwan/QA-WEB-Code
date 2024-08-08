@@ -1339,9 +1339,9 @@ function Home() {
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
             <ul>
               <button>
-            <Link to="/">Home</Link></button>
+            <Link to="/"><li>Home</li></Link></button>
               <li>
-              <Link to="/askquestion"><button>Ask Question</button></Link>
+              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
               </li>
               <li>
                 <button onClick={Logout} className="logout">Logout</button>
