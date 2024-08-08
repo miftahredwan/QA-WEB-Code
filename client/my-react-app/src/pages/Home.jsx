@@ -1337,14 +1337,15 @@ function Home() {
          
           <nav className='navbar'>
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
-           
+          <li>
               <button>
             <Link to="/">Home</Link></button>
-             
+             </li><li>
               <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
-            
+              </li>
+            <li>
                 <button onClick={Logout} className="logout">Logout</button>
-             
+                </li>
            
           </nav>
         </div>

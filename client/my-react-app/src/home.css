@@ -88,7 +88,7 @@ color: #ffe206;
     height: 50px; /* Adjust the height of the logo */
     /* Optional: add margin if you need more spacing */
     margin-right: auto; /* Pushes the logo to the left */
-    margin-left: 200px; /* Moves the logo a bit to the right */
+    margin-left: 90px; /* Moves the logo a bit to the right */
   }
 
   header a {
@@ -105,10 +105,9 @@ color: #ffe206;
     float:right;
   }
   
-  header .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  header .navbar li {
+    margin: 5px;
+    padding: 5px;
   }
   
   header .navbar li {
