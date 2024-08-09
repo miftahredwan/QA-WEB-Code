@@ -154,7 +154,7 @@ color: #ffe206;
   
 
   .hero h1 {
-    margin-left: auto;
+    margin-left: 150px;
     font-size: 38px;
     margin-bottom: 120px;
     color: #efff09; /* Neon green color */
@@ -166,9 +166,9 @@ color: #ffe206;
     /* Neon effect */
     text-shadow: 
       0 0 5px hsl(61, 100%, 50%),
-      0 0 10px #00ff9d,
+      0 0 10px #121413,
       0 0 80px #d0ff00,
-      0 0 150px #00ff9d;
+      0 0 150px #020303;
   
     box-shadow: 
       0 0 5px #01140d,
