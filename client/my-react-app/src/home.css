@@ -156,8 +156,8 @@ color: #ffe206;
   .hero h1 {
     margin-left: 150px;
     font-size: 38px;
-    margin-bottom: 120px;
-    color: #efff09; /* Neon green color */
+    margin-bottom: 200px;
+    color: #0f0f0c; 
     padding: 15px 10px;
     border-radius: 19px;
     text-align: center;
@@ -174,8 +174,8 @@ color: #ffe206;
       0 0 5px #01140d,
       0 0 10px #0c1813,
       0 0 40px #d0ff00,
-      0 0 90px #00eeff,
-      0 0 150px #00ff9d;
+      0 0 90px #0a0d0e,
+      0 0 150px #0e1311;
   }
   
 
@@ -223,6 +223,7 @@ align-items: center;
   .question-section {
     background-color: #0f0e0969;
     padding: 20px;
+    margin-bottom: 200px;
     border: 0px solid #ddd;
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
