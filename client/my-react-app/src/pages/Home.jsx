@@ -1350,7 +1350,7 @@ function Home() {
           </nav>
         </div>
       </header>
-      <div className="hero-content">
+      <div className="hero-content-profile">
         {user.profileImage ? (
           <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
@@ -1363,7 +1363,8 @@ function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>GROW YOUR PROGRAMMING KNOWLEDGE WITH OUR HELP!</h1>
+            <h1>"The cure for ignorance is to ask." <br />
+            <strong>Prophet Muhammad (PBUH)</strong> </h1>
           </div>
         </div>
         <section className='question-section'>
