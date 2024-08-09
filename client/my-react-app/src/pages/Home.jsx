@@ -1351,8 +1351,8 @@ function Home() {
         </div>
       </header>
       <div className="hero-content-profile">
-        {user.profileImage ? (
-          <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+        {user.profileimage ? (
+          <img src={`${backendUrl}/${user.profileimage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
