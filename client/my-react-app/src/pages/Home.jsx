@@ -1350,7 +1350,7 @@ function Home() {
           </nav>
         </div>
       </header>
-      <div className="hero-content-profile">
+      <div className="hero-content">
         {user.profileImage ? (
           <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
