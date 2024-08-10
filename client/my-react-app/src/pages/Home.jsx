@@ -1415,6 +1415,7 @@ function Home() {
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
                     <button onClick={() => handleUpdateClick(question)}>Update</button>
+                    <br />
                       {editingQuestionId === question.questionid && (
                         <div className="update-box">
                           <h2>Update Question</h2>
