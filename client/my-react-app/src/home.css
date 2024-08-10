@@ -168,7 +168,7 @@ color: #ffe206;
 
   .hero h1 {
     margin-left: 150px;
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: 200px;
     color: #0f0f0c; 
     padding: 15px 10px;
@@ -194,6 +194,7 @@ color: #ffe206;
   .hero .question-title{
     border: none; /* Removes any border */
     margin-bottom: 10px; /* Adjust this value to decrease the bottom margin */
+    margin-left: 50%;
 }
 
 
