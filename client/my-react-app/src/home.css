@@ -318,7 +318,7 @@ align-items: center;
 
 .questions-list .question-container {
     width: calc(100vw - 40px); /* Full screen width minus margin */
-    padding: 15px;
+    /* padding: 15px; */
     margin-left: calc(-50vw + 50% + 20px); /* Center with a 20px margin on each side */
     margin-right: calc(-50vw + 50% + 20px);
     border: 1px solid #ccc;
@@ -341,11 +341,11 @@ align-items: center;
 
 .questions-list .question-container input[type="checkbox"] {
   size: small;
-  margin-right: 1px; /* Adjust spacing on the right side of the checkbox */
+  margin: 1px; /* Adjust spacing on the right side of the checkbox */
 }
 
 .questions-list .question-container a {
-  margin-right: 5px; /* Adjust spacing on the right side of the link */
+  margin: 1px; /* Adjust spacing on the right side of the link */
 }
 
 .questions-list .question-container button {
@@ -366,7 +366,7 @@ align-items: center;
 } */
 
 .update-box {
-  width: 50%; /* Take up the full width of the parent container */
+  width: 100%; /* Take up the full width of the parent container */
   padding: 15px;
   margin-top: 10px; /* Space between the "Update" button and the update box */
   border: 1px solid #ccc;
@@ -582,4 +582,62 @@ align-items: center;
     font-weight: bold;
   }
 
+  
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear; /* Infinite spin animation */
+    }
+  }
+  
+  .card {
+    /* padding: 2em; Padding inside the card */
+    background-color: #f7f7f7; /* Background color of the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    margin: 1em 0; /* Margin around the card */
+  }
+  .read-the-docs {
+    color: #888888f4; /* Text color for the read the docs section */
+  }
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    #root {
+      padding: 1.5rem; /* Adjust padding for medium screens */
+    }
+  
+    .logo {
+      height: 5em; /* Adjust logo size */
+      padding: 1em; /* Adjust padding */
+    }
+  }
+  @media (max-width: 768px) {
+    #root {
+      padding: 1rem; /* Further adjust padding for smaller screens */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .logo {
+      height: 4em; /* Further adjust logo size */
+      padding: 0.5em; /* Further adjust padding */
+    }
+  
+    .card {
+      padding: 1.5em; /* Adjust card padding */
+      margin: 0.5em 0; /* Adjust card margin */
+    }
+  }
+  @media (max-width: 480px) {
+    #root {
+      padding: 0.5rem; /* Minimal padding for very small screens */
+    }
+    .logo {
+      height: 3em; /* Further adjust logo size */
+      padding: 0.25em; /* Further adjust padding */
+    }
+    .card {
+      padding: 1em; /* Adjust card padding */
+      margin: 0.25em 0; /* Adjust card margin */
+    }
+  }
   
