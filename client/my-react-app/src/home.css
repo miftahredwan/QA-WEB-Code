@@ -369,6 +369,40 @@ align-items: center;
   margin-right: 0; /* Remove margin on the last button to avoid extra space */
 }
 
+
+
+
+.button-group {
+  display: flex;
+  gap: 5px; /* Adjust the gap as needed */
+}
+
+.button-style {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.button-update {
+  background-color: #3498db;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
 /* .update-box {
     margin-top: 10px;
     padding: 10px;
@@ -429,36 +463,6 @@ align-items: center;
 .update-box button:hover {
   background-color: #2980b9;
 }
-
-
-
-
-
-
-.button-group {
-  display: flex;
-  gap: 5px; /* Adjust the gap as needed */
-}
-
-.button-style {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button-delete {
-  background-color: #e74c3c;
-  color: white;
-}
-
-.button-update {
-  background-color: #3498db;
-  color: white;
-}
-
-
-
 
 
 
