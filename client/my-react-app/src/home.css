@@ -325,7 +325,7 @@ align-items: center;
     border-radius: 5px;
     background-color: #24241bd0;
     box-sizing: border-box;
-    display: block;
+    display: flex;
     align-items: center;
     gap: 10px; /* Adjust spacing between elements */
 }
@@ -340,7 +340,8 @@ align-items: center;
 }
 
 .questions-list .question-container input[type="checkbox"] {
-  margin-right: 5px; /* Adjust spacing on the right side of the checkbox */
+  size: small;
+  margin-right: 1px; /* Adjust spacing on the right side of the checkbox */
 }
 
 .questions-list .question-container a {
@@ -348,7 +349,7 @@ align-items: center;
 }
 
 .questions-list .question-container button {
-  margin-right: 5px; /* Adjust spacing on the right side of the buttons */
+  margin-right: 1px; /* Adjust spacing on the right side of the buttons */
 }
 
 .questions-list .question-container button:last-child {
@@ -365,14 +366,14 @@ align-items: center;
 } */
 
 .update-box {
-  width: 100%; /* Take up the full width of the parent container */
+  width: 50%; /* Take up the full width of the parent container */
   padding: 15px;
   margin-top: 10px; /* Space between the "Update" button and the update box */
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #333;
   box-sizing: border-box;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   gap: 10px; /* Space between form elements */
 }
