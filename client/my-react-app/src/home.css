@@ -694,7 +694,7 @@ align-items: center;
   }
   
   .footer .container {
-    max-width: 1000px; /* Reduced container width */
+    max-width: 100px; /* Reduced container width */
     margin: 0 auto;
     padding: 0 15px; /* Reduced padding */
   }
