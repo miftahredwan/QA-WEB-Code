@@ -129,9 +129,13 @@ color: #ffe206;
    position: relative;
   }
 
+
+
   .hero-content {
     position: absolute;
     margin-top:-600px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   
   .hero {
