@@ -191,6 +191,12 @@ color: #ffe206;
       0 0 150px #0e1311;
   }
   
+  .hero .question-title{
+    border: none; /* Removes any border */
+    margin-bottom: 10px; /* Adjust this value to decrease the bottom margin */
+}
+
+
   @keyframes bounce {
     0% {
       transform: translateY(0);
@@ -246,10 +252,7 @@ align-items: center;
     margin-top:-650px; 
   }
 
-  .question-title h1{
-    border: none; /* Removes any border */
-    margin-bottom: 10px; /* Adjust this value to decrease the bottom margin */
-}
+
 
   .question {
     display: inline-block;
