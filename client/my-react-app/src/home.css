@@ -692,9 +692,10 @@ align-items: center;
   }
   
   .container-footer {
-    max-width: 1000px; /* Reduced container width */
+    background-color: #000;
+    width: 100%; 
     margin: 0 auto;
-    color: black;
+    color:white
     padding: 0; /* Removed padding */
   }
   
