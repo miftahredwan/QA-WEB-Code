@@ -23,6 +23,7 @@ body {
   }
   
   .steps {
+    margin-top: auto;
     list-style:lower-roman;
     padding: 0;
     color: #ffff;
@@ -31,11 +32,12 @@ body {
   
   .steps li {
     margin-bottom: 15px;
+    clear: black;
   }
   
   .form-container {
     margin-top: 25px;
-
+    margin: auto;
     border: 0px solid #ffcc00; /* Added border */
     border-radius: 20px;
     cursor: pointer;
@@ -50,13 +52,26 @@ body {
   }
   
   
-  label {
+  .form-container .label {
     display: block;
     margin-bottom: 5px;
     padding: 1%;
-    color: #f3ff06;
+    color: #101105;
   }
   
+
+  .form-container ,[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #130d0d;
+    border-radius: 40px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
   input[type="text"], textarea {
     width: 100%;
     padding: 10px;
