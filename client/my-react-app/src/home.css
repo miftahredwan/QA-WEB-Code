@@ -318,7 +318,7 @@ align-items: center;
 
 .questions-list .question-container {
     width: calc(100vw - 40px); /* Full screen width minus margin */
-    /* padding: 15px; */
+    padding: 15px;
     margin-left: calc(-50vw + 50% + 20px); /* Center with a 20px margin on each side */
     margin-right: calc(-50vw + 50% + 20px);
     border: 1px solid #ccc;
@@ -331,28 +331,28 @@ align-items: center;
 }
 
 
-.questions-list .question-container img.profile-image {
+.question-container img.profile-image {
   margin-right: 5px; /* Adjust spacing on the right side of the image */
 }
 
-.questions-list .question-container .username {
+.question-container .username {
   margin-right: 5px; /* Adjust spacing on the right side of the username */
 }
 
-.questions-list .question-container input[type="checkbox"] {
+.question-container input[type="checkbox"] {
   size: small;
   margin: 1px; /* Adjust spacing on the right side of the checkbox */
 }
 
-.questions-list .question-container a {
-  margin: 1px; /* Adjust spacing on the right side of the link */
+.question-container a {
+  margin: 5px; /* Adjust spacing on the right side of the link */
 }
 
-.questions-list .question-container button {
+.question-container button {
   margin-right: 1px; /* Adjust spacing on the right side of the buttons */
 }
 
-.questions-list .question-container button:last-child {
+.question-container button:last-child {
   margin-right: 0; /* Remove margin on the last button to avoid extra space */
 }
 
