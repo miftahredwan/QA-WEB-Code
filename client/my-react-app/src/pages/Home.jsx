@@ -1407,33 +1407,22 @@ function Home() {
                         {question.questiontitle}
                       </Link>
                       <div className="button-group">
-  <button 
-    className="button-style button-delete"
-    onClick={() => handleDelete(question.questionid, question.userid)}
-  >
-    Delete
-  </button>
-  <input
-    type="checkbox"
-    checked={selectedQuestions.includes(question.questionid)}
-    onChange={() => handleCheckboxChange(question.questionid)}
-  />
-  <button 
-    className="button-style button-update"
-    onClick={() => handleUpdateClick(question)}
-  >
-    Update
-  </button>
-</div>
-
-                      {/* <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
+                    
+                      <button 
+                      className="button-style button-delete"
+                       onClick={() => handleDelete(question.questionid, question.userid)}>
+                        Delete</button>
                       <input
                         type="checkbox"
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
-                    <button onClick={() => handleUpdateClick(question)}>Update</button>
-                    </div> */}
+                    <button className="button-style button-update"
+                    onClick={() => handleUpdateClick(question)}>Update</button>
+                    </div>
+                    </div>
+
+
                     {editingQuestionId === question.questionid && (
                         <div className="update-box">
                           <h2>Update Question</h2>
