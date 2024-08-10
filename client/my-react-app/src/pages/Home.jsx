@@ -1406,8 +1406,6 @@ function Home() {
                       <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
                         {question.questiontitle}
                       </Link>
-                    
-                      <button onClick={() => handleUpdateClick(question)}>Update</button>
                       <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
                       <input
                         type="checkbox"
