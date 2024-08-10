@@ -1457,7 +1457,7 @@ function Home() {
           )}
         </section>
       </section>
-      <footer className="footer">
+     <footer className="footer">
   <div className="container">
     <p>&copy; 2024 Baaji Tech Software Solutions.</p>
     <p>

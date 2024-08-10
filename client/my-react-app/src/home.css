@@ -441,7 +441,7 @@ align-items: center;
 
 .update-box button {
   align-self: flex-start; /* Align buttons to the left */
-  background-color: #fceb04;
+  background-color: #dbd034;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -669,24 +669,22 @@ align-items: center;
     }
   }
   
-
   .footer {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
-    padding: 10px 0; /* Reduced padding */
+    padding: 2px 0; /* Minimal padding */
     text-align: center;
-    margin-top: 20px; /* Add some space above the footer */
   }
   
   .footer p {
-    margin: 3px 0; /* Reduced margin */
+    margin: 2px 0; /* Minimal margin */
     font-size: 13px; /* Slightly smaller font size */
   }
   
   .footer a {
     color: #fff; /* White text for links */
     text-decoration: none;
-    margin: 0 3px; /* Reduced spacing between links */
+    margin: 0 2px; /* Reduced spacing between links */
   }
   
   .footer a:hover {
@@ -694,8 +692,8 @@ align-items: center;
   }
   
   .footer .container {
-    max-width: 100px; /* Reduced container width */
+    max-width: 1000px; /* Reduced container width */
     margin: 0 auto;
-    padding: 0 15px; /* Reduced padding */
+    padding: 0; /* Removed padding */
   }
   
