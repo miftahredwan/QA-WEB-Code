@@ -1459,7 +1459,7 @@ function Home() {
       </section>
   <section>
   <footer className="footer">
-  <div className="container-footer">
+  <div className="container">
     <p>&copy; 2024 Baaji Tech Software Solutions.</p>
     <p>
       <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
