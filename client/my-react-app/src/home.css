@@ -130,23 +130,13 @@ color: #ffe206;
   }
 
 
-/* 
+
   .hero-content {
     position: absolute;
     margin-top:-600px;
-  } */
-  
-
-  .hero-content {
-    position: absolute;
-    /* top: 50%; Centers vertically */
     left: 50%; /* Centers horizontally */
-    transform: translate(-50%,-50%); /* Adjusts for the element's width and height */
-    margin-top: -600px; /* Remove the negative margin if no longer needed */
-    text-align: center; /* Center the text within the container */
-}
-
-
+  } 
+  
   .hero {
     background-color: #f2f2f200;
     padding: 180px 100px;
