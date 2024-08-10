@@ -8,7 +8,7 @@ body {
   
   .container {
     width: 100%; /* make the container full width */
-    /* height: 100vh; make the container full screen height */
+    height: 100vh; 
     margin: 0; /* remove margin */
     padding: 30px; /* keep some padding for breathing room */
     border-radius: 0; /* remove border radius */

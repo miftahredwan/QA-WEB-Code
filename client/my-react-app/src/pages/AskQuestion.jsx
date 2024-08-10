@@ -169,16 +169,6 @@ function AskQuestion() {
       <div className="container">
         <div className="hero-content">
           {/* <img src="https://placehold.co/100x100" alt="Logo" /> */}
-          
-          {user.profileImage ? (
-
-
-<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
-
-  // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
-) : (
-  <p>No profile image available</p>
-)}
 </div>
         <header>
         <div className="container">
@@ -199,6 +189,15 @@ function AskQuestion() {
         </div>
       </header>
         <div className="steps">
+        {user.profileImage ? (
+
+
+<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+
+  // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
+) : (
+  <p>No profile image available</p>
+)}
           <li>Summarize your problem in a one-line title.</li>
           <li>Describe your problem in more detail.</li>
           <li>Describe what you tried and what you expected to happen.</li>
