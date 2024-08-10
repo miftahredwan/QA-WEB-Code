@@ -670,6 +670,7 @@ align-items: center;
   }
   
   .footer {
+    margin: auto;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     padding: 2px 0; /* Minimal padding */
@@ -691,7 +692,7 @@ align-items: center;
     text-decoration: underline;
   }
   
-  .container-footer {
+  .footer .container {
     background-color: #000;
     width: 100%; 
     margin: 0 auto;
