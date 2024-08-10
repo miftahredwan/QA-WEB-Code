@@ -1457,7 +1457,8 @@ function Home() {
           )}
         </section>
       </section>
-     <footer className="footer">
+  <section>
+  <footer className="footer">
   <div className="container-footer">
     <p>&copy; 2024 Baaji Tech Software Solutions.</p>
     <p>
@@ -1467,8 +1468,10 @@ function Home() {
     </p>
   </div>
 </footer>
+  </section>
 
     </div>
+    
   );
 }
 
