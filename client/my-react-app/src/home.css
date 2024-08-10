@@ -695,9 +695,9 @@ align-items: center;
   .footer .container-footer {
     background-color: #000;
     width: 100%; 
-    margin: 0 auto;
+    /* margin : 0 auto; */
     color:white;
     padding: 0; /* Removed padding */
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
   
