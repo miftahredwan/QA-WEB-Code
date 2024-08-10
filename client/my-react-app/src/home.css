@@ -131,12 +131,16 @@ color: #ffe206;
 
 
 
+
+  
   .hero-content {
     position: absolute;
-    margin-top:-600px;
-    left: 50%; /* Centers horizontally */
-  } 
-  
+    margin-top: -600px;
+    left: 50%; /* Moves the left edge to the center of the container */
+    transform: translateX(-50%); /* Shifts the element back by 50% of its width to center it horizontally */
+    text-align: center; /* Ensures the text inside the element is centered */
+}
+
   .hero {
     background-color: #f2f2f200;
     padding: 180px 100px;
@@ -224,7 +228,7 @@ align-items: center;
   }
 
   .question-section {
-    background-color: #0f0e0969;
+    background-color: #0f0e0918;
     padding: 20px;
     margin-bottom: 200px;
     border: 0px solid #ddd;
