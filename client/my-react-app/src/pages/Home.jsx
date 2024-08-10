@@ -1359,13 +1359,14 @@ function Home() {
         <h1>Welcome, {user.username}</h1>
         <Link to="/askquestion"><button>Ask Question</button></Link>
       </div>
-      <div className="container">
+
+      <section className="hero">
+        <div className="container">
           <div className="hero-content">
-            <h1>"The cure for ignorance is to ask." <br />
+            <h1>"The cure for ignorance is to ask" <br />
             <strong>Prophet Muhammad (PBUH)</strong> </h1>
           </div>
         </div>
-      <section className="hero">
         <section className='question-section'>
           {questions?.length > 0 && <h1 className="question-title">Questions</h1>}
           <div className="questions-list">
