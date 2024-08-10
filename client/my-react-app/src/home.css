@@ -246,7 +246,7 @@ align-items: center;
     margin-top:-650px; 
   }
 
-  .question-title {
+  .question-title h1{
     border: none; /* Removes any border */
     margin-bottom: 10px; /* Adjust this value to decrease the bottom margin */
 }
