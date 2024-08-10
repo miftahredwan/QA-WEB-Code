@@ -1457,8 +1457,7 @@ function Home() {
           )}
         </section>
       </section>
-     <footer className="footer">
-  <div className="container">
+  <div className="container-footer">
     <p>&copy; 2024 Baaji Tech Software Solutions.</p>
     <p>
       <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
@@ -1466,8 +1465,6 @@ function Home() {
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   </div>
-</footer>
-
     </div>
   );
 }

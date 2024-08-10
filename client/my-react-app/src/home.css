@@ -691,9 +691,10 @@ align-items: center;
     text-decoration: underline;
   }
   
-  .footer .container {
+  .container-footer {
     max-width: 1000px; /* Reduced container width */
     margin: 0 auto;
+    color: black;
     padding: 0; /* Removed padding */
   }
   
