@@ -324,18 +324,91 @@ align-items: center;
 }
 
 .questions-list .question-container {
-  width: 100vw; /* Full screen width */
+    width: calc(100vw - 40px); /* Full screen width minus margin */
+    padding: 15px;
+    margin-left: calc(-50vw + 50% + 20px); /* Center with a 20px margin on each side */
+    margin-right: calc(-50vw + 50% + 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #24241bd0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between elements */
+}
+
+
+
+
+
+.update-box {
+  width: 100%; /* Take up the full width of the parent container */
   padding: 15px;
-  margin-left: calc(-50vw + 50%); /* Center and stretch to full width */
-  margin-right: calc(-50vw + 50%);
+  margin-top: 10px; /* Space between the "Update" button and the update box */
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #24241bd0;
+  background-color: #333;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  gap: 10px; /* Adjust spacing between elements */
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
 }
+
+.update-box h2 {
+  margin: 0 0 10px 0; /* Space below the heading */
+  font-size: 18px;
+  color: #fff;
+}
+
+.update-box label {
+  display: flex;
+  flex-direction: column;
+  color: #ddd;
+}
+
+.update-box input[type="text"], 
+.update-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background-color: #24241b;
+  color: #fff;
+  resize: vertical; /* Allow resizing of the textarea vertically */
+}
+
+.update-box button {
+  align-self: flex-start; /* Align buttons to the left */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.update-box button:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .question-container {

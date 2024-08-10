@@ -1402,16 +1402,18 @@ function Home() {
           <p>No profile image available</p>
         )}
                     <div className='username'>{question.username}</div>
+                     
+                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
+                        {question.questiontitle}
+                      </Link>
+                     
+                      <button onClick={() => handleUpdateClick(question)}>Update</button>
+                      <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
                       <input
                         type="checkbox"
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
-                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
-                        {question.questiontitle}
-                      </Link>
-                      <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
-                      <button onClick={() => handleUpdateClick(question)}>Update</button>
                       {editingQuestionId === question.questionid && (
                         <div className="update-box">
                           <h2>Update Question</h2>
