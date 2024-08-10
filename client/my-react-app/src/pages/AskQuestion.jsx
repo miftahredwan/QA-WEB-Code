@@ -142,34 +142,7 @@ function AskQuestion() {
 
   return (
     <div>
-       <header>
-        <div className="container">
-         
-          <nav className='navbar'>
-          <Link to="/"><img src={logo} alt="Logo" className="homelogo" /></Link> {/* Logo element */}  
-          <li>
-              <button>
-            <Link to="/">Home</Link></button>
-             </li><li>
-              <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
-              </li>
-            <li>
-                <button onClick={Logout} className="logout">Logout</button>
-                </li>
-           
-          </nav>
-        </div>
-      </header>
-      {/* <nav className="nav">
-        <ul>
-         <Link to="/"> <li className="navhome">Home</li></Link>
-          <button onClick={Logout} className="logout">Logout</button>
-        </ul>
-      </nav> */}
-      <div className="container">
-        <header>
-        <div className="container">
-         
+      <header>
           <nav className='navbar'>
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
           <li>
@@ -183,7 +156,6 @@ function AskQuestion() {
                 </li>
            
           </nav>
-        </div>
       </header>
         <div className="steps">
         {user.profileImage ? (
@@ -209,7 +181,6 @@ function AskQuestion() {
             <button type="submit">Post Your Question</button>
           </div>
         </form>
-      </div>
     </div>
   );
 }
