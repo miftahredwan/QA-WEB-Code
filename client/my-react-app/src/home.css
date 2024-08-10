@@ -279,14 +279,7 @@ color: #ffe206;
     background-color: #2980b9;
 }
 
-/* .update-box {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #333;
-    flex-direction: column;
-} */
+
 
 
 
@@ -339,7 +332,14 @@ align-items: center;
 
 
 
-
+/* .update-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    flex-direction: column;
+} */
 
 .update-box {
   width: 100%; /* Take up the full width of the parent container */
