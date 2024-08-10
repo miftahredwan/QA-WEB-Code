@@ -393,16 +393,6 @@ align-items: center;
   margin-right: 0; /* Remove margin on the last button to avoid extra space */
 }
 
-
-
-
-
-
-
-
-
-
-
 /* .update-box {
     margin-top: 10px;
     padding: 10px;
@@ -451,7 +441,7 @@ align-items: center;
 
 .update-box button {
   align-self: flex-start; /* Align buttons to the left */
-  background-color: #3498db;
+  background-color: #fceb04;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -683,20 +673,20 @@ align-items: center;
   .footer {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding */
     text-align: center;
-    margin-top: 30px; /* Add some space above the footer */
+    margin-top: 20px; /* Add some space above the footer */
   }
   
   .footer p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 3px 0; /* Reduced margin */
+    font-size: 13px; /* Slightly smaller font size */
   }
   
   .footer a {
     color: #fff; /* White text for links */
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 3px; /* Reduced spacing between links */
   }
   
   .footer a:hover {
@@ -704,8 +694,8 @@ align-items: center;
   }
   
   .footer .container {
-    max-width: 1200px;
+    max-width: 1000px; /* Reduced container width */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px; /* Reduced padding */
   }
   

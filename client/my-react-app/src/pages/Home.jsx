@@ -1459,8 +1459,12 @@ function Home() {
       </section>
       <footer className="footer">
   <div className="container">
-    <p>&copy; 2024 Baaji Tech Software Solutions. All rights reserved.</p>
-    <p>Follow us on <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <p>&copy; 2024 Baaji Tech Software Solutions.</p>
+    <p>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
   </div>
 </footer>
 
