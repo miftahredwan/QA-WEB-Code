@@ -1367,11 +1367,10 @@ function Home() {
           <strong>Prophet Muhammad (PBUH)</strong></h1>
           </div>
         </div>
-        {questions?.length > 0 && 
-          <h1 className="question-title">Questions</h1>}
+     
         <section className='question-section'>
-          {/* {questions?.length > 0 && 
-          <h1 className="question-title">Questions</h1>} */}
+          {questions?.length > 0 && 
+          <h1 className="question-title">Questions</h1>}
           <div className="questions-list">
             {questions?.length > 0 ? (
               questions.map((question, index) => (
@@ -1389,13 +1388,20 @@ function Home() {
                       <p>No profile image available</p>
                     )} */}
 
-{question.profileimage ? (
+{/* {question.profileimage ? (
+          <img src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
+        ) : (
+          <p>No profile image available</p>
+        )}
+                    <div className='username'>{question.username}</div> */}
+                    <div className="question-container">
+
+                    {question.profileimage ? (
           <img src={`${backendUrl}/${question.profileimage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
         ) : (
           <p>No profile image available</p>
         )}
                     <div className='username'>{question.username}</div>
-                    <div className="question-container">
                       <input
                         type="checkbox"
                         checked={selectedQuestions.includes(question.questionid)}

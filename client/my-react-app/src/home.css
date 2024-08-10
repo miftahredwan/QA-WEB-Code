@@ -253,6 +253,9 @@ align-items: center;
     box-sizing:border-box;
     margin-top:-1000px; 
   }
+  .question-container {
+    display: inline-block;
+  }
 
   .qa {
     margin-top:-650px; 
