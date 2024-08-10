@@ -233,6 +233,7 @@ color: #ffe206;
 
 
   .question-container {
+    width: 100%;
     border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 10px;
@@ -257,6 +258,7 @@ color: #ffe206;
 
 .question-container input[type="checkbox"] {
     margin-right: 10px;
+    size: small;
 }
 
 .question-container a {
@@ -346,9 +348,11 @@ align-items: center;
 
 .question-container a {
   margin: 5px; /* Adjust spacing on the right side of the link */
+  display: block;
 }
 
 .question-container button {
+  margin-left: 1px;
   margin-right: 1px; /* Adjust spacing on the right side of the buttons */
 }
 
