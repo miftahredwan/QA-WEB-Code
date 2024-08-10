@@ -167,9 +167,6 @@ function AskQuestion() {
         </ul>
       </nav> */}
       <div className="container">
-        <div className="hero-content">
-          {/* <img src="https://placehold.co/100x100" alt="Logo" /> */}
-</div>
         <header>
         <div className="container">
          
