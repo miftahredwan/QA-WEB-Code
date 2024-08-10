@@ -1403,17 +1403,37 @@ function Home() {
         )}
                     <div className='username'>{question.username}</div>
                      
-                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}>
+                      <Link to={`/ansquestion?id=${question.questionid}&title=${encodeURIComponent(question.questiontitle)}&description=${encodeURIComponent(question.questiondescription)}&username=${encodeURIComponent(question.username)}&userid=${encodeURIComponent(question.userid)}`}    className="link-space">
                         {question.questiontitle}
                       </Link>
-                      <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
+                      <div className="button-group">
+  <button 
+    className="button-style button-delete"
+    onClick={() => handleDelete(question.questionid, question.userid)}
+  >
+    Delete
+  </button>
+  <input
+    type="checkbox"
+    checked={selectedQuestions.includes(question.questionid)}
+    onChange={() => handleCheckboxChange(question.questionid)}
+  />
+  <button 
+    className="button-style button-update"
+    onClick={() => handleUpdateClick(question)}
+  >
+    Update
+  </button>
+</div>
+
+                      {/* <button onClick={() => handleDelete(question.questionid, question.userid)}>Delete</button>
                       <input
                         type="checkbox"
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
                     <button onClick={() => handleUpdateClick(question)}>Update</button>
-                    </div>
+                    </div> */}
                     {editingQuestionId === question.questionid && (
                         <div className="update-box">
                           <h2>Update Question</h2>
