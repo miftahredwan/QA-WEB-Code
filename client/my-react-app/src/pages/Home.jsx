@@ -1413,29 +1413,6 @@ function Home() {
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
                     <button onClick={() => handleUpdateClick(question)}>Update</button>
-                    <br />
-                      {editingQuestionId === question.questionid && (
-                        <div className="update-box">
-                          <h2>Update Question</h2>
-                          <label>
-                            Title:
-                            <input
-                              type="text"
-                              value={currentQuestion.title}
-                              onChange={(e) => setCurrentQuestion({ ...currentQuestion, title: e.target.value })}
-                            />
-                          </label>
-                          <label>
-                            Description:
-                            <textarea
-                              value={currentQuestion.description}
-                              onChange={(e) => setCurrentQuestion({ ...currentQuestion, description: e.target.value })}
-                            />
-                          </label>
-                          <button onClick={handleUpdateQuestion}>Update</button>
-                          <button onClick={() => setEditingQuestionId(null)}>Cancel</button>
-                        </div>
-                      )}
                     </div>
                     {editingQuestionId === question.questionid && (
                         <div className="update-box">
