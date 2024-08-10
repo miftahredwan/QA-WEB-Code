@@ -130,8 +130,6 @@ function AskQuestion() {
       alert("Something went wrong");
     }
   }
-
-
   async function Logout() {
     // Remove the token from local storage
     localStorage.removeItem('token');

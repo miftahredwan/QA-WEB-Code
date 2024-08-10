@@ -32,7 +32,7 @@ body {
   
   .steps li {
     margin-bottom: 15px;
-    clear: black;
+    color: black;
   }
   
   .form-container {
@@ -52,7 +52,7 @@ body {
   }
   
   
-  .form-container .label {
+  .form-container label {
     display: block;
     margin-bottom: 5px;
     padding: 1%;
