@@ -267,7 +267,7 @@ color: #ffe206;
     text-decoration: none;
 }
 
-.question-container button {
+/* .question-container button {
     background-color: #3498db;
     color: white;
     border: none;
@@ -275,11 +275,11 @@ color: #ffe206;
     border-radius: 3px;
     cursor: pointer;
     margin-right: 5px;
-}
+} */
 
-.question-container button:hover {
+/* .question-container button:hover {
     background-color: #2980b9;
-}
+} */
 
 
 
@@ -677,5 +677,35 @@ align-items: center;
       padding: 1em; /* Adjust card padding */
       margin: 0.25em 0; /* Adjust card margin */
     }
+  }
+  
+
+  .footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px; /* Add some space above the footer */
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   

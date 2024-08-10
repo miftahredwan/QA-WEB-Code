@@ -1407,16 +1407,16 @@ function Home() {
                         {question.questiontitle}
                       </Link>
                       <div className="button-group">
-                    
-                      <button 
-                      className="button-style button-delete"
-                       onClick={() => handleDelete(question.questionid, question.userid)}>
-                        Delete</button>
                       <input
                         type="checkbox"
                         checked={selectedQuestions.includes(question.questionid)}
                         onChange={() => handleCheckboxChange(question.questionid)}
                       />
+                      <button 
+                      className="button-style button-delete"
+                       onClick={() => handleDelete(question.questionid, question.userid)}>
+                        Delete</button>
+                     
                     <button className="button-style button-update"
                     onClick={() => handleUpdateClick(question)}>Update</button>
                     </div>
@@ -1457,11 +1457,13 @@ function Home() {
           )}
         </section>
       </section>
-      <footer>
-        <div className="container">
-          <p>&copy; 2024 Baaji Tech Software Solution</p>
-        </div>
-      </footer>
+      <footer className="footer">
+  <div className="container">
+    <p>&copy; 2024 Baaji Tech Software Solutions. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+  </div>
+</footer>
+
     </div>
   );
 }
