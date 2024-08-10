@@ -323,6 +323,21 @@ align-items: center;
     margin-top: -1000px; 
 }
 
+.questions-list .question-container {
+  width: 100vw; /* Full screen width */
+  padding: 15px;
+  margin-left: calc(-50vw + 50%); /* Center and stretch to full width */
+  margin-right: calc(-50vw + 50%);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #24241bd0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements */
+}
+
+
   .question-container {
     display: inline-block;
   }
