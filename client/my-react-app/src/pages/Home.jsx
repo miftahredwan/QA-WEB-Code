@@ -1367,9 +1367,11 @@ function Home() {
           <strong>Prophet Muhammad (PBUH)</strong></h1>
           </div>
         </div>
-        <section className='question-section'>
-          {questions?.length > 0 && 
+        {questions?.length > 0 && 
           <h1 className="question-title">Questions</h1>}
+        <section className='question-section'>
+          {/* {questions?.length > 0 && 
+          <h1 className="question-title">Questions</h1>} */}
           <div className="questions-list">
             {questions?.length > 0 ? (
               questions.map((question, index) => (

@@ -194,7 +194,7 @@ color: #ffe206;
   .hero .question-title{
     border: none; /* Removes any border */
     margin-bottom: 10px; /* Adjust this value to decrease the bottom margin */
-    margin-left: 50%;
+    /* margin-left: 50%; */
 }
 
 
@@ -228,6 +228,11 @@ color: #ffe206;
     text-transform: uppercase;
   }
   
+.question-list {
+  display: inline-block;
+}
+
+
 h1 {
 align-items: center;
 }
