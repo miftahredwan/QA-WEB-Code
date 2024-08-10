@@ -1363,12 +1363,13 @@ function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>"The cure for ignorance is to ask" <br />
-            <strong>Prophet Muhammad (PBUH)</strong> </h1>
+          <h1><span>"The cure for ignorance is to ask"</span> <br />
+          <strong>Prophet Muhammad (PBUH)</strong></h1>
           </div>
         </div>
         <section className='question-section'>
-          {questions?.length > 0 && <h1 className="question-title">Questions</h1>}
+          {questions?.length > 0 && 
+          <h1 className="question-title">Questions</h1>}
           <div className="questions-list">
             {questions?.length > 0 ? (
               questions.map((question, index) => (
