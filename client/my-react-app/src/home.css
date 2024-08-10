@@ -697,5 +697,6 @@ align-items: center;
     margin: 0 auto;
     color:white;
     padding: 0; /* Removed padding */
+    margin-bottom: auto;
   }
   
