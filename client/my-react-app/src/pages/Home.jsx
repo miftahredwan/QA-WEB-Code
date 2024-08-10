@@ -1461,13 +1461,85 @@ function Home() {
   <footer className="footer">
   <div className="container">
     <p>&copy; 2024 Baaji Tech Software Solutions.</p>
-    <p>
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
+
+    <div className="footer-links">
+      <p><strong>Categories:</strong></p>
+      <p>
+        <Link to="/category/technology">Technology</Link> | 
+        <Link to="/category/science">Science</Link> | 
+        <Link to="/category/mathematics">Mathematics</Link> | 
+        <Link to="/category/health">Health</Link> | 
+        <Link to="/category/business">Business</Link> | 
+        <Link to="/category/education">Education</Link> | 
+        <Link to="/category/environment">Environment</Link> | 
+        <Link to="/category/lifestyle">Lifestyle</Link> | 
+        <Link to="/category/entertainment">Entertainment</Link> | 
+        <Link to="/category/sports">Sports</Link>
+      </p>
+
+      <p><strong>Popular Questions:</strong></p>
+      <p>
+        <Link to="/question/most-answered">Most Answered</Link> | 
+        <Link to="/question/recent">Recently Asked</Link> | 
+        <Link to="/question/unanswered">Unanswered</Link> | 
+        <Link to="/question/top-rated">Top Rated</Link> | 
+        <Link to="/question/hot-today">Hot Today</Link> | 
+        <Link to="/question/featured">Featured</Link> | 
+        <Link to="/question/editor-picks">Editor’s Picks</Link> | 
+        <Link to="/question/trending">Trending</Link>
+      </p>
+
+      <p><strong>Resources:</strong></p>
+      <p>
+        <Link to="/faq">FAQ</Link> | 
+        <Link to="/guidelines">Community Guidelines</Link> | 
+        <Link to="/support">Support</Link> | 
+        <Link to="/contact">Contact Us</Link> | 
+        <Link to="/about">About Us</Link> | 
+        <Link to="/privacy-policy">Privacy Policy</Link> | 
+        <Link to="/terms-of-service">Terms of Service</Link> | 
+        <Link to="/report">Report an Issue</Link>
+      </p>
+
+      <p><strong>User Account:</strong></p>
+      <p>
+        <Link to="/profile">Profile</Link> | 
+        <Link to="/settings">Settings</Link> | 
+        <Link to="/notifications">Notifications</Link> | 
+        <Link to="/login">Login</Link> | 
+        <Link to="/signup">Sign Up</Link> | 
+        <Link to="/my-questions">My Questions</Link> | 
+        <Link to="/my-answers">My Answers</Link> | 
+        <Link to="/saved-questions">Saved Questions</Link>
+      </p>
+
+      <p><strong>Learning & Help:</strong></p>
+      <p>
+        <Link to="/tutorials">Tutorials</Link> | 
+        <Link to="/how-to-ask">How to Ask</Link> | 
+        <Link to="/how-to-answer">How to Answer</Link> | 
+        <Link to="/community-rules">Community Rules</Link> | 
+        <Link to="/moderator-guidelines">Moderator Guidelines</Link> | 
+        <Link to="/support-center">Support Center</Link> | 
+        <Link to="/help-center">Help Center</Link> | 
+        <Link to="/contact-mods">Contact Moderators</Link>
+      </p>
+
+      <p><strong>Follow us:</strong></p>
+      <p>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> | 
+        <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a> | 
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a> | 
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </p>
+    </div>
   </div>
 </footer>
+
   </section>
 
     </div>

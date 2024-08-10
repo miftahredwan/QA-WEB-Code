@@ -668,24 +668,26 @@ align-items: center;
       margin: 0.25em 0; /* Adjust card margin */
     }
   }
-  
   .footer {
-    margin: auto;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
-    padding: 2px 0; /* Minimal padding */
+    padding: 5px 0; /* Minimal padding */
     text-align: center;
   }
   
   .footer p {
-    margin: 2px 0; /* Minimal margin */
+    margin: 3px 0; /* Minimal margin */
     font-size: 13px; /* Slightly smaller font size */
+  }
+  
+  .footer-links p {
+    margin: 5px 0; /* Minimal margin between link sections */
   }
   
   .footer a {
     color: #fff; /* White text for links */
     text-decoration: none;
-    margin: 0 2px; /* Reduced spacing between links */
+    margin: 0 3px; /* Reduced spacing between links */
   }
   
   .footer a:hover {
@@ -693,11 +695,8 @@ align-items: center;
   }
   
   .footer .container {
-    background-color: #000;
-    width: 100%; 
-    /* margin : 0 auto; */
-    color:white;
-    padding: 0; /* Removed padding */
-    margin-bottom: 0;
+    max-width: 1000px; /* Container width */
+    margin: 0 auto;
+    padding: 0 10px; /* Reduced padding */
   }
   
