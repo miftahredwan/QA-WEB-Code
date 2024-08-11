@@ -101,6 +101,15 @@ input {
     display: block;
     width: auto;
   }
+
+  .answer-section {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.452);
+    font-size: medium;
+  }
+  .answer-section button {
+    color: red;
+  }
   
   button:hover {
     background-color: #ffe206;
