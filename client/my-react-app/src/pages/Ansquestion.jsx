@@ -2300,7 +2300,7 @@ import '../ansque.css';
 import axiosBase from '../axiosconfig';
 import logo from '../../public/images/cropped-White-logo-no-background.png.webp'; // Import the logo image
 import { AppState } from '../App'; // Assuming AppState context is defined in App.js
-const backendUrl = import.meta.env.VITE_BACKEND_URL
+// const backendUrl = import.meta.env.VITE_BACKEND_URL
 function AnsQuestion() {
   const location = useLocation();
   const [question, setQuestion] = useState({});
@@ -2363,7 +2363,8 @@ function AnsQuestion() {
       console.log('Posted answer:', data);
 
       // Trigger a page reload
-      window.location.reload();
+      // window.location.reload();
+      navigate(`/ansquestion/${question.id}`)
     } catch (error) {
       console.log('Error posting answer:', error);
       if (error.response) {

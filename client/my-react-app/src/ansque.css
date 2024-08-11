@@ -19,7 +19,12 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin-left: auto;
-   color: #f6cd03;
+   color: #1b1a12;
+  }
+
+  h4 {
+    color: #000000;
+    background-color: #ffffff94;
   }
   
   .steps {
@@ -27,7 +32,7 @@ body {
     list-style:lower-roman;
     padding: 0;
     color:  black;
-    text-shadow: #fff;
+    background-color: #ffffff6e;
     font-weight: 700;
   }
   
