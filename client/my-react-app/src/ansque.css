@@ -105,17 +105,6 @@ input {
     margin: auto -20px;
   }
 
-  .answer {
-    display: flex;
-    gap: 10px;
-    background-color: rgba(10, 7, 7, 0.541);
-    margin-left: auto;
-    margin-bottom: 5px;
-    /* font-size: large; */
-    /* color: #000000; */
-    /* background-color: rgba(255, 255, 255, 0.356); */
-    /* font-size: medium; */
-  }
 
   .answer .username {
     margin-left: 20px;
@@ -134,8 +123,24 @@ input {
     background-color: red;
     font-weight: bold;
   }
+
+
+
+  .answer {
+    display: flex;
+    gap: 10px;
+    background-color: rgba(10, 7, 7, 0.541);
+    margin-left: auto;
+    margin-bottom: 5px;
+    /* font-size: large; */
+    /* color: #000000; */
+    /* background-color: rgba(255, 255, 255, 0.356); */
+    /* font-size: medium; */
+  }
+
   
-  button:hover {
+  
+button:hover {
     font-weight: bold;
     background-color: #ffe206;
     color: #000000;  
@@ -165,7 +170,6 @@ input {
   }
 
 
-  
   .nav ul {
     list-style: none;
     margin: 0;
