@@ -105,7 +105,7 @@ input {
   .answer {
     display: flex;
     background-color: black;
-    margin: 50%;
+    margin-left: 50%;
     /* font-size: large; */
     /* color: #000000; */
     /* background-color: rgba(255, 255, 255, 0.356); */
