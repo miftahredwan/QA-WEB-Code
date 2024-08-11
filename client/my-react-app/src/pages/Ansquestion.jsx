@@ -2451,21 +2451,12 @@ function AnsQuestion() {
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav> */}
-        {user.profileImage ? (
-
-
-<img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
-
-  // <img src={`http://localhost:5500/uploads/${user.profileImage}`} alt="Profile" className="profile-image" />
-) : (
-  <p>No profile image available</p>
-)}
-
         <h1>Question</h1>
         <div className="question-details">
-          <h2>{question.title}</h2>
+         
           <p>Asked by: {question.username}</p>
-          <p>{question.description}</p>
+          <h2>{question.title}</h2>
+          <h4>{question.description}</h4>
         </div>
         <div className="answers-section">
           <h2>Answer From The Community</h2>
@@ -2476,8 +2467,7 @@ function AnsQuestion() {
                 <div key={index} className="answer">
                   <div className="username">{answer.username}</div>
                   <div className="userid">{answer.userid}</div>
-                  <div className="answer-text">{answer.answer}</div>
-                  <button onClick={() => handleDeleteAnswer(answer.answerid, answer.userid)}>Delete</button>
+                  <div className="answer-text">{answer.answer} <button onClick={() => handleDeleteAnswer(answer.answerid, answer.userid)}>Delete</button></div>
                 </div>
               ))
           ) : (
