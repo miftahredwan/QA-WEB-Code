@@ -109,7 +109,7 @@ input {
     display: flex;
     gap: 10px;
     background-color: rgba(10, 7, 7, 0.541);
-    margin-left: 10%;
+    margin-left: auto;
     margin-bottom: 5px;
     /* font-size: large; */
     /* color: #000000; */
@@ -118,6 +118,7 @@ input {
   }
 
   .answer .username {
+    margin-left: 20px;
     color: yellow;
     font-weight: bold;
     font-size: larger;
