@@ -222,7 +222,7 @@
 
 
 import './App.css';
-import './nprogress-custom.css'
+// import './nprogress-custom.css'
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -233,6 +233,8 @@ import AskQuestion from './pages/AskQuestion';
 import Ansquestion from './pages/Ansquestion';
 import nprogress from 'nprogress';
 import 'nprogress/nprogress.css';
+import { RingLoader } from 'react-spinners';
+
 
 export const AppState = createContext();
 
@@ -291,7 +293,9 @@ function App() {
   }, [location]);
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading indicator while fetching user data
+    return  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <RingLoader color="#0072ff" size={60} />
+  </div>
   }
 
   return (
