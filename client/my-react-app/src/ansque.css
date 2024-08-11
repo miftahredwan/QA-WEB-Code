@@ -102,7 +102,8 @@ input {
     width: auto;
   }
   .answers-section{
-    background-color: black;
+    background-color: rgba(10, 7, 7, 0.418);
+    margin: auto --20px;
   }
 
 
