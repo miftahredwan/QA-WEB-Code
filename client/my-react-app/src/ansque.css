@@ -105,7 +105,7 @@ input {
   .answer {
     display: flex;
     background-color: black;
-    margin-left: 50%;
+   gap: 10px;
     /* font-size: large; */
     /* color: #000000; */
     /* background-color: rgba(255, 255, 255, 0.356); */
@@ -113,15 +113,18 @@ input {
   }
 
   .answer .username {
+    margin-left: 50%;
     color: white;
     font-size: larger;
   }
   .answer .answer-text {
+    margin-left: 50%;
     color: white;
     font-size: larger;
   }
 
   .answers-section button {
+    margin-left: 50%;
     color: black;
     font-size: medium;
     background-color: red;
