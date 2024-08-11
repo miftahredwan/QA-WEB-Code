@@ -1356,7 +1356,7 @@ function Home() {
         ) : (
           <p>No profile image available</p>
         )}
-        <h1>Welcome, {user.username}</h1>
+        <h2>Welcome, {user.username}</h2>
         <Link to="/askquestion"><button>Ask Question</button></Link>
       </div>
 
