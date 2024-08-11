@@ -2466,7 +2466,6 @@ navigate('/')
               .map((answer, index) => (
                 <div key={index} className="answer">
                   <div className="username">{answer.username}</div>
-                  <div className="userid">{answer.userid}</div>
                   <div className="answer-text">{answer.answer} <button onClick={() => handleDeleteAnswer(answer.answerid, answer.userid)}>Delete</button></div>
                 </div>
               ))
