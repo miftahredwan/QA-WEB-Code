@@ -1338,8 +1338,8 @@ function Home() {
           <nav className='navbar'>
           <img src={logo} alt="Logo" className="homelogo" /> {/* Logo element */}  
           <li>
-              <button>
-            <Link to="/">Home</Link></button>
+             
+            <Link to="/"> <button>Home</button></Link>
              </li><li>
               <Link to="/askquestion"><button className="btn-nav">Ask Question</button></Link>
               </li>
