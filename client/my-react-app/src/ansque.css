@@ -101,9 +101,18 @@ input {
     display: block;
     width: auto;
   }
+  .answer .username {
+    color: white;
+    font-size: larger;
+  }
+  .answer .answer-text {
+    color: white;
+    font-size: larger;
+  }
 
   .answers-section .answer .username .answer-text{
     display: flex;
+    background-color: black;
     margin: 50%;
     font-size: large;
     color: #000000;
