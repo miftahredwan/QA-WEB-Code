@@ -2364,7 +2364,8 @@ function AnsQuestion() {
 
       // Trigger a page reload
       // window.location.reload();
-      navigate(`/ansquestion/${question.id}`)
+      window.location.reload(true)
+    
     } catch (error) {
       console.log('Error posting answer:', error);
       if (error.response) {
