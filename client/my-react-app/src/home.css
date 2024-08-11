@@ -266,7 +266,7 @@ color: #ffe206;
 .question-container a {
     flex-grow: 1;
     color: #00ff22;
-    font-size: medium;
+    font-size: large;
     text-decoration: none;
     font-weight: bold;
 }
