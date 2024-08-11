@@ -101,11 +101,16 @@ input {
     display: block;
     width: auto;
   }
+  .answers-section{
+    background-color: black;
+  }
+
+
 
   .answer {
     display: flex;
-    background-color: black;
-    gap: 10px;
+   
+    margin-left: 50%;
     /* font-size: large; */
     /* color: #000000; */
     /* background-color: rgba(255, 255, 255, 0.356); */
@@ -113,18 +118,15 @@ input {
   }
 
   .answer .username {
-    margin-left: 50%;
     color: white;
     font-size: larger;
   }
   .answer .answer-text {
-    margin-left: 50%;
     color: white;
     font-size: larger;
   }
 
-  .answer button {
-    margin-left: 50%;
+  .answers-section button {
     color: black;
     font-size: medium;
     background-color: red;
