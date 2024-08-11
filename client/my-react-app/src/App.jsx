@@ -222,6 +222,7 @@
 
 
 import './App.css';
+import './nprogress-custom.css'
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
