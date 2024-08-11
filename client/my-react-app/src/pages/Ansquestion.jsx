@@ -2451,9 +2451,7 @@ function AnsQuestion() {
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav> */}
-     
-        <div className="hero-content">
-          {user.profileImage ? (
+        {user.profileImage ? (
 
 
 <img src={`${backendUrl}/${user.profileImage.replace(/\\/g, '/')}`} alt="Profile" className="profile-image" onError={(e) => { e.target.onerror = null; e.target.src = "fallback.jpg" }} />
@@ -2463,8 +2461,6 @@ function AnsQuestion() {
   <p>No profile image available</p>
 )}
 
-
-        </div>
         <h1>Question</h1>
         <div className="question-details">
           <h2>{question.title}</h2>

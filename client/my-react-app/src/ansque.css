@@ -23,10 +23,11 @@ body {
   }
   
   .steps {
+    font-size: 18px;
     list-style:lower-roman;
     padding: 0;
-    background-color: #fff;
     color:  black;
+    text-shadow: #fff;
     font-weight: 700;
   }
   
