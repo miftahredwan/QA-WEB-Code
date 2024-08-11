@@ -232,7 +232,7 @@ import axiosBase from './axiosconfig';
 import AskQuestion from './pages/AskQuestion';
 import Ansquestion from './pages/Ansquestion';
 import nprogress from 'nprogress';
-import 'nprogress/nprogress.css';
+// import 'nprogress/nprogress.css';
 import { RingLoader } from 'react-spinners';
 
 
@@ -294,7 +294,7 @@ function App() {
 
   if (loading) {
     return  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <RingLoader color="#0072ff" size={60} />
+    <RingLoader color="blue" size={120} />
   </div>
   }
 
