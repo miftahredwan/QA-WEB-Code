@@ -45,6 +45,10 @@ body {
   color: black;
  }
 
+ .form-container textarea text {
+  font-size: 14px;
+ }
+
 
   .form-container ,input[type="text"], textarea {
     width: 100%;
