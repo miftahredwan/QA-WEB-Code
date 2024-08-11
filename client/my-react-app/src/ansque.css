@@ -25,6 +25,7 @@ body {
   .steps {
     list-style:lower-roman;
     padding: 0;
+    background-color: #fff;
     color:  black;
     font-weight: 700;
   }
@@ -44,9 +45,6 @@ body {
  .form-container label{
   color: black;
  }
-
-
-
   .form-container ,input[type="text"], textarea {
     width: 100%;
     color: #000000;

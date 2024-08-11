@@ -2429,9 +2429,7 @@ function AnsQuestion() {
   return (
     <div>   
        <header>
-        <div className="container">
-         
-          <nav className='navbar'>
+        <nav className='navbar'>
           <Link to="/"><img src={logo} alt="Logo" className="homelogo" /></Link> {/* Logo element */}  
           <li>
               <button>
@@ -2442,9 +2440,7 @@ function AnsQuestion() {
             <li>
                 <button onClick={Logout} className="logout">Logout</button>
                 </li>
-           
           </nav>
-        </div>
       </header>   
       {/* <nav className="nav">
         <ul>
@@ -2455,7 +2451,7 @@ function AnsQuestion() {
           <button onClick={Logout} className="logout">Logout</button>
         </ul>
       </nav> */}
-      <div className="container">
+     
         <div className="hero-content">
           {user.profileImage ? (
 
@@ -2503,7 +2499,6 @@ function AnsQuestion() {
           />
           <button onClick={handleAnswerSubmit}>Post Your Answer</button>
         </div>
-      </div>
     </div>
   );
 }
