@@ -2362,9 +2362,7 @@ function AnsQuestion() {
       alert("Posted Successfully");
       console.log('Posted answer:', data);
 
-      // Trigger a page reload
-      // window.location.reload();
-      window.location.reload(true)
+navigate('/')
     
     } catch (error) {
       console.log('Error posting answer:', error);
