@@ -2454,7 +2454,7 @@ function AnsQuestion() {
         <h1>Question</h1>
         <div className="question-details">
          
-          <p>Asked by: {question.username}</p>
+          <h2>Asked by: {question.username}</h2>
           <h2>{question.title}</h2>
           <h4>{question.description}</h4>
         </div>

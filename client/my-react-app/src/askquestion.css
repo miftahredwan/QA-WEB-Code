@@ -62,6 +62,9 @@ body {
     color: #101105;
   }
   
+  link img {
+margin-left: auto -20px;
+  }
 
   .form-container
   , [type="text"]

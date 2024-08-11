@@ -35,6 +35,13 @@ body {
     margin-bottom: 15px;
   }
   
+.question-details h4{
+  font-size: 18px;
+  font-weight: bold;
+  color: #090909;
+  text-shadow: #fff;
+}
+
   .form-container {
     color: black;
     margin-top: 25px;
