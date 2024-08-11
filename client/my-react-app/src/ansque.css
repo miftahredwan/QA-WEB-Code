@@ -102,12 +102,12 @@ input {
     width: auto;
   }
 
-  .answers-section .answer, button{
+  .answers-section .answer .username .answer-text{
     display: flex;
-    margin: auto;
+    margin: 50%;
     font-size: large;
     color: #000000;
-    background-color: rgba(255, 255, 255, 0.452);
+    background-color: rgba(255, 255, 255, 0.356);
     font-size: medium;
   }
   .answers-section button {
