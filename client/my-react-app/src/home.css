@@ -267,7 +267,7 @@ color: #ffe206;
     flex-grow: 1;
     color: blue;
     font-size: large;
-    text-decoration: line-through; /* Adds a line through the text */
+    text-decoration: underline; /* Adds an underline to the text */
     text-decoration: none;
     font-weight: bold;
 }
