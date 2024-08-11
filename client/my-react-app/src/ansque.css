@@ -45,9 +45,6 @@ body {
   color: black;
  }
 
- .form-container textarea text {
-  font-size: 14px;
- }
 
 
   .form-container ,input[type="text"], textarea {
@@ -57,6 +54,7 @@ body {
     /* border: 2px solid #130d0d; */
     border-radius: 10px;
     box-sizing: border-box;
+    font-size: medium;
   }
 
 
