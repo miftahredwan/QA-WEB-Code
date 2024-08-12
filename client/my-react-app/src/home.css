@@ -674,7 +674,8 @@ align-items: center;
     }
   }
   .footer {
-    background-color: #000; /* Black background */
+    width: 100%;
+    background-color: #0000003f; /* Black background */
     color: #fff; /* White text */
     padding: 5px 0; /* Minimal padding */
     text-align: center;
@@ -700,7 +701,7 @@ align-items: center;
   }
   
   .footer .container {
-    max-width: 1000px; /* Container width */
+    max-width: 1200px; /* Container width */
     margin: 0 auto;
     padding: 0 10px; /* Reduced padding */
   }
