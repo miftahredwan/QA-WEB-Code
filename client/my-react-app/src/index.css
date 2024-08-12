@@ -1,14 +1,16 @@
- body {
+body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensures the body takes up the full height of the viewport */
-  width: 100%; /* Ensures the body takes up the full width of the viewport */
+  height: 100%;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background-color: transparent;
   color: #333;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-  overflow-y: auto;   /* Allows vertical scrolling if needed */
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box; /* Ensure padding/borders are included in width/height */
 }
+
 .background-container::before {
   content: '';
   position: fixed;
@@ -16,72 +18,70 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/2.jpg'); /* Initial background image */
-  background-size: cover; /* Ensure the image covers the entire background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the background image */
-  background-attachment: fixed; /* Fix the background image in place */
+  background-image: url('/images/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   transition: opacity 10s ease-in-out;
-  animation: changeBackground 400s infinite linear, zoomBlur 30s infinite ease-in-out; /* Apply the background change and zoom/blur animation */
+  animation: changeBackground 400s infinite linear, zoomBlur 30s infinite ease-in-out;
 }
+
 .background-container {
   opacity: 1;
 }
+
 @keyframes changeBackground {
-  0% { background-image: url('/images/2.jpg'); }
-  20% { background-image: url('/images/2.jpg'); }
-  20.01% { background-image: url('/images/1.jpg'); }
-  40% { background-image: url('/images/1.jpg'); }
-  40.01% { background-image: url('/images/3.jpg'); }
-  60% { background-image: url('/images/3.jpg'); }
-  60.01% { background-image: url('/images/4.jpg'); }
-  80% { background-image: url('/images/4.jpg'); }
-  80.01% { background-image: url('/images/5.jpg'); }
-  100% { background-image: url('/images/5.jpg'); }
+  0%, 20% { background-image: url('/images/2.jpg'); }
+  20.01%, 40% { background-image: url('/images/1.jpg'); }
+  40.01%, 60% { background-image: url('/images/3.jpg'); }
+  60.01%, 80% { background-image: url('/images/4.jpg'); }
+  80.01%, 100% { background-image: url('/images/5.jpg'); }
 }
+
 @keyframes zoomBlur {
   0%, 100% { transform: scale(1); filter: blur(0px); }
   50% { transform: scale(1.2); filter: blur(5px); }
 }
+
 .content {
-  position: absolute; /* Changed to absolute to position relative to the nearest positioned ancestor or the viewport */
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1; /* Ensure content is above the background */
-  padding: 20px; /* Your content styling */
+  z-index: 1;
+  padding: 20px;
+  max-width: 100%;
 }
-
 
 #root {
-  position: absolute; /* Ensure it covers the full viewport */
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%; /* Ensure it spans the full width of the viewport */
-  height: 100%; /* Ensure it spans the full height of the viewport */
-  margin: 0; /* Remove auto centering margin */
-  /* padding: 2rem; Padding around the content */
-  text-align: center; /* Center the text within the container */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-
-
 .logo {
-  height: 6em; /* Set the height of the logo */
-  padding: 1.5em; /* Padding around the logo */
-  will-change: filter; /* Optimize performance for filter changes */
-  transition: filter 300ms; /* Smooth transition for filter changes */
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  max-width: 100%;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa); /* Apply drop shadow on hover */
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa); /* Apply different drop shadow for React logo on hover */
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -91,57 +91,64 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear; /* Infinite spin animation */
+    animation: logo-spin infinite 20s linear;
   }
 }
 
 .card {
-  /* padding: 2em; Padding inside the card */
-  background-color: #f7f7f7; /* Background color of the card */
-  border-radius: 8px; /* Rounded corners for the card */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
-  margin: 1em 0; /* Margin around the card */
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+  max-width: 100%;
 }
+
 .read-the-docs {
-  color: #888888f4; /* Text color for the read the docs section */
+  color: #888888f4;
 }
-/* Responsive Styles */
+
 @media (max-width: 1200px) {
   #root {
-    padding: 1.5rem; /* Adjust padding for medium screens */
+    padding: 1.5rem;
   }
 
   .logo {
-    height: 5em; /* Adjust logo size */
-    padding: 1em; /* Adjust padding */
+    height: 5em;
+    padding: 1em;
   }
 }
+
 @media (max-width: 768px) {
   #root {
-    padding: 1rem; /* Further adjust padding for smaller screens */
-    text-align: left; /* Align text to the left */
+    padding: 1rem;
+    text-align: left;
   }
 
   .logo {
-    height: 4em; /* Further adjust logo size */
-    padding: 0.5em; /* Further adjust padding */
+    height: 4em;
+    padding: 0.5em;
   }
 
   .card {
-    padding: 1.5em; /* Adjust card padding */
-    margin: 0.5em 0; /* Adjust card margin */
+    padding: 1.5em;
+    margin: 0.5em 0;
+    width: 100%;
   }
 }
+
 @media (max-width: 480px) {
   #root {
-    padding: 0.5rem; /* Minimal padding for very small screens */
+    padding: 0.5rem;
   }
+
   .logo {
-    height: 3em; /* Further adjust logo size */
-    padding: 0.25em; /* Further adjust padding */
+    height: 3em;
+    padding: 0.25em;
   }
+
   .card {
-    padding: 1em; /* Adjust card padding */
-    margin: 0.25em 0; /* Adjust card margin */
+    padding: 1em;
+    margin: 0.25em 0;
+    width: 100%;
   }
 }

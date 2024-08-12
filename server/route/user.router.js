@@ -1,7 +1,5 @@
 const express = require("express");
-const {register, login, check, 
-    // getAllUsers, getUserById
-} = require("../controller/user.controller")
+const {register, login, check} = require("../controller/user.controller")
 const multer = require("multer");;
 const authenticateToken=require("../api/middleware/auth")
 const router = express.Router();
@@ -23,6 +21,4 @@ router.post("/login", login);
 router.get("/check", 
     authenticateToken, 
     check);
-// router.get("/all", getAllUsers);
-// router.get("/single", getUserById);
 module.exports=router

@@ -127,24 +127,6 @@ input {
     font-size: 20px;
     background-color: rgba(22, 2, 21, 0.45);
 }
-
-/* Submit button styling */
-/* .submit-button {
-    background-color: #141414;
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 20px 0;
-    margin-top: 20px;
-    border: 2px solid #ffcc00;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 1s, transform 1s;
-    width: 100%;
-    position: relative;
-} */
-
-
 .submit-button {
     background-color: #141414;
     font-size: 24px;
