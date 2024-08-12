@@ -86,9 +86,9 @@ function AskQuestion() {
         <form onSubmit={handleSubmit}>
           <div className="form-container">
             <label htmlFor="title">Title:</label>
-            <input ref={titleDOM} type="text" id="title" name="title" placeholder="Enter your question title" required />
+            <input ref={titleDOM} type="text" id="title" name="title" placeholder="Enter your question title, maximum length of 50 characters" required />
             <label htmlFor="description">Question Description:</label>
-            <textarea ref={descriptionDOM} type="text" id="description" name="description" placeholder="Enter your question description" required />
+            <textarea ref={descriptionDOM} type="text" id="description" name="description" placeholder="Enter your question description,maximum length of 200 characters" required />
             <button type="submit">Post Your Question</button>
           </div>
         </form>
