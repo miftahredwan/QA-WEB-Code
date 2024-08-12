@@ -210,13 +210,14 @@ function Home() {
       </div>
 
       <section className="hero">
+        <section>
         <div className="container">
           <div className="hero-content">
           <h1><span>"The cure for ignorance is to ask"</span> <br />
           <strong>Prophet Muhammad (PBUH)</strong></h1>
           </div>
         </div>
-     
+        </section>
         <section className='question-section'>
           {questions?.length > 0 && 
           <h1 className="question-title">Questions</h1>}
